@@ -1,14 +1,12 @@
 import React from 'react';
-import 'bulma/css/bulma.css'
-import './App.css';
-import MenuWrapper from './components/menu/Menu';
+import 'bulma/css/bulma.css';
+import './styling/global.scss';
+import LandingPageHeader from './components/landing-page/LandingPageHeader';
 
 function App() {
     return (
-        <div className="App">
-            <header className="App-header">
-                <MenuWrapper />
-            </header>
+        <div className="site-wrapper">
+            <LandingPageHeader/>
         </div>
     );
 }

@@ -1,0 +1,10 @@
+@import "variables/colors";
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  background: $primary-color;
+}

@@ -1,0 +1,26 @@
+@import "../../styling/variables/colors";
+
+.landing-page-header {
+  &__container {
+
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100vw 100vw 100vw;
+    border-color: transparent transparent $quinary-color transparent;
+    transform: rotate(-28deg);
+    left: -75vw;
+    top: -67vw;
+    position: absolute;
+
+
+    -webkit-transform: rotate(-28deg);
+    -moz-transform: rotate(-28deg);
+    -ms-transform: rotate(-28deg);
+    -o-transform: rotate(-28deg);
+    transform: rotate(-28deg);
+  }
+}
+
+
+
