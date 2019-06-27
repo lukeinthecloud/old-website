@@ -1,4 +1,12 @@
-@import "variables/colors";
+$heading: 'Alegreya Sans SC', sans-serif;
+$body: 'Raleway', sans-serif;
+
+$primary: #282C34;
+$secondary: #282C34;
+$tertiary: #615253;
+$quaternary: #A39A9A;
+$quinary: #E9EFEA;
+$senary: #E1A550;
 
 html,
 body {
@@ -6,5 +14,24 @@ body {
 }
 
 body {
-  background: $primary-color;
+  background: #282C34;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  color: $primary !important;
+}
+
+h2 {
+  color: $senary !important;
+}
+
+p {
+  color: $quinary;
 }

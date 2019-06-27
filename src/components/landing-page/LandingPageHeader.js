@@ -1,18 +1,10 @@
 import React from 'react';
-import styles from './LandingPageHeader.module.scss'
 import HeaderProfile from './HeaderProfile/HeaderProfile';
+import {HeaderDivider} from './styles/landing-page-header.style';
 
 export default function LandingPageHeader() {
-    return (
-        <div>
-            <HeaderProfile/>
-            <div className={`
-            ${styles['landing-page-header']} 
-            ${styles['landing-page-header__container']}`}>
-            </div>
-
-            <div className={`${styles['landing-page-header__container-divider']}`}>
-            </div>
-        </div>
-    );
+    return ([
+        <HeaderProfile/>,
+        <HeaderDivider/>
+    ]);
 }

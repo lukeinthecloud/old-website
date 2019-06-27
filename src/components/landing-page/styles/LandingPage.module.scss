@@ -1,0 +1,21 @@
+header {
+  max-height: 600px;
+}
+
+@media (min-width: 1408px) {
+  header {
+    max-height: 35vw;
+  }
+}
+
+@media (max-width: 1408px) {
+  header {
+    max-height: 450px;
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    max-height: 350px;
+  }
+}
