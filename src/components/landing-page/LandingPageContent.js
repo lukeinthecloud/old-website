@@ -1,10 +1,10 @@
 import React from 'react';
 import Introduction from './Content/Introduction';
-import About from './Content/About';
+import Skills from './Content/Skills';
 
 export default function LandingPageContent() {
     return ([
         <Introduction/>,
-        <About/>
+        <Skills/>
     ]);
 }

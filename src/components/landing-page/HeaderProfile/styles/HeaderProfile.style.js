@@ -2,7 +2,7 @@ import styled from '@emotion/styled/macro';
 
 const profileImageScale = ' 200px';
 
-export const ProfileContainer = styled.div`
+export const ProfileContainerStyled = styled.div`
         display: flex;
         align-items: center;
         position: absolute;
@@ -13,7 +13,7 @@ export const ProfileContainer = styled.div`
         
         h1 {
             margin-left: 20px;
-            color: var(--lic-color-secondary) !important;
+            color: var(--lic-color-primary) !important;
         }
         
         small {
@@ -22,7 +22,7 @@ export const ProfileContainer = styled.div`
         }
     `;
 
-export const ProfileImage = styled.div`
+export const ProfileImageStyled = styled.div`
         position: relative;
         width: ${profileImageScale};
         height: ${profileImageScale};

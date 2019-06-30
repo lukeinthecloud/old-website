@@ -1,6 +1,6 @@
 import styled from '@emotion/styled/macro';
 
-export const HeaderDivider = styled.div`
+export const HeaderDividerStyled = styled.div`
   position: absolute;
   width: 200vw;
   height: 600px;

@@ -2,10 +2,14 @@
     --lic-font-heading: 'Alegreya Sans SC', sans-serif;
     --lic-font-body: 'Raleway', sans-serif;
     --lic-color-primary: #282C34;
-    --lic-color-secondary: #615253;
-    --lic-color-tertiary: #A39A9A;
+    --lic-color-secondary: #62BBB6;
+    --lic-color-tertiary: #345764;
     --lic-color-quartinary: #E9EFEA;
     --lic-color-quinary: #E1A550;
+}
+
+html {
+    font-size: 16px;
 }
 
 html,
@@ -24,11 +28,8 @@ h6 {
     color: var(--lic-color-primary) !important;
 }
 
-h2 {
-    color: var(--lic-color-quinary) !important;
-}
-
 p {
+    font-size: 1rem;
     color: var(--lic-color-quartinary);
 }
 
@@ -39,4 +40,16 @@ p {
 header {
     position: relative;
     flex: 1;
+}
+
+.title-primary {
+    color: var(--lic-color-quartinary) !important;
+}
+
+.title-secondary {
+    color: var(--lic-color-tertiary) !important;
+}
+
+.u-justify-center {
+    justify-content: center;
 }

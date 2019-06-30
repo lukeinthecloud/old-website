@@ -1,18 +1,18 @@
 import React from 'react';
 import profilePicture from './profile-picture.jpg'
-import {ProfileContainer, ProfileImage} from './styles/header-profile.style';
+import {ProfileContainerStyled, ProfileImageStyled} from './styles/HeaderProfile.style';
 
 export default function HeaderProfile() {
     return (
-        <ProfileContainer>
-            <ProfileImage>
+        <ProfileContainerStyled>
+            <ProfileImageStyled>
                 <img src={profilePicture} alt="Luke Babich Profile"/>
-            </ProfileImage>
+            </ProfileImageStyled>
             <h1 className={`title is-1`}>
                 Luke Babich
                 <small className={'subtitle is-6'}>Software Developer</small>
             </h1>
-        </ProfileContainer>
+        </ProfileContainerStyled>
     );
 }
 
