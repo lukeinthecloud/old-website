@@ -1,11 +1,12 @@
 import React from 'react';
-import styles from './styles/LandingPage.module.scss';
 import LandingPageHeader from './LandingPageHeader';
 import LandingPageContent from './LandingPageContent';
 
+import styles from './styles/landing-page.module.css';
+
 export default function LandingPage() {
     return ([
-        <header>
+        <header className={styles.landingPageHeader}>
             <LandingPageHeader/>
         </header>,
         <LandingPageContent/>

@@ -1,0 +1,42 @@
+:root {
+    --lic-font-heading: 'Alegreya Sans SC', sans-serif;
+    --lic-font-body: 'Raleway', sans-serif;
+    --lic-color-primary: #282C34;
+    --lic-color-secondary: #615253;
+    --lic-color-tertiary: #A39A9A;
+    --lic-color-quartinary: #E9EFEA;
+    --lic-color-quinary: #E1A550;
+}
+
+html,
+body {
+    background: #282C34;
+    font-family: var(--lic-font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family:var(--lic-font-heading);
+    color: var(--lic-color-primary) !important;
+}
+
+h2 {
+    color: var(--lic-color-quinary) !important;
+}
+
+p {
+    color: var(--lic-color-quartinary);
+}
+
+.site-wrapper {
+    flex-direction: column;
+}
+
+header {
+    position: relative;
+    flex: 1;
+}

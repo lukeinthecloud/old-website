@@ -8,7 +8,6 @@ export default {
         tertiary: '#615253',
         quaternary: '#A39A9A',
         quinary: '#E9EFEA',
-        senary: '#E1A550',
-        septenary: '#E1A550'
+        senary: '#E1A550'
     }
 };

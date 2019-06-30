@@ -1,5 +1,4 @@
 import styled from '@emotion/styled/macro';
-import theme from '../../../../styling/theme';
 
 const profileImageScale = ' 200px';
 
@@ -14,12 +13,12 @@ export const ProfileContainer = styled.div`
         
         h1 {
             margin-left: 20px;
-            color: ${theme.colors.secondary} !important;
+            color: var(--lic-color-secondary) !important;
         }
         
         small {
           display: block;
-          font-family: ${theme.fonts.body};
+          font-family: var(--lic-font-body);
         }
     `;
 
