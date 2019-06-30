@@ -4,7 +4,7 @@ export default function About() {
     return (
         <section className={'section'}>
             <div className="container is-full">
-                <h2 className="title is-2">Main Title</h2>
+                <h2 className="title is-2">A little bit about me</h2>
                 <div className={'content'}>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
