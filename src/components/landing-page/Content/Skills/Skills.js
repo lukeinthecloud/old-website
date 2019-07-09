@@ -1,10 +1,10 @@
 import React from 'react';
 import {
-    IconStyled,
     SectionAltStyled
-} from './styles/Content.style';
+} from '../styles/Content.style';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {BorderStyled} from '../../styles/globals.style';
+import {BorderStyled} from '../../../styles/globals.style';
+import {IconStyled} from './styles/Skills.style';
 
 export default function Skills() {
     return (
