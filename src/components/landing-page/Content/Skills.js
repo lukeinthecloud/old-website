@@ -1,41 +1,53 @@
 import React from 'react';
 import {
-    IconSmallStyled,
     IconStyled,
-    SectionAltStyled,
-    SkillContainerStyled,
-    SkillsStyled
+    SectionAltStyled
 } from './styles/Content.style';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {BorderStyled} from '../../styles/globals.style';
 
 export default function Skills() {
     return (
         <SectionAltStyled className={'section'}>
-            <div className="container is-fluid">
-                <div className={"columns u-justify-center"}>
-                    <SkillContainerStyled className={'column is-flex'}>
-                        <IconStyled className={'icon column'}>
+            <div className="container is-full">
+                <div className={'columns'}>
+                    <div className={'column is-flex u-justify-center'}>
+                        <IconStyled>
                             <FontAwesomeIcon icon={['fab', 'js']}/>
                         </IconStyled>
+                    </div>
 
-                        <SkillsStyled className={'columns'}>
-                            <IconSmallStyled className={'icon column'}>
-                                <FontAwesomeIcon icon={['fab', 'angular']}/>
-                            </IconSmallStyled>
-                            <IconSmallStyled className={'icon column'}>
-                                <FontAwesomeIcon icon={['fab', 'vuejs']}/>
-                            </IconSmallStyled>
-                            <IconSmallStyled className={'icon column'}>
-                                <FontAwesomeIcon icon={['fab', 'react']}/>
-                            </IconSmallStyled>
-                        </SkillsStyled>
-                    </SkillContainerStyled>
+                    <div className={'column is-flex u-justify-center'}>
+                        <IconStyled>
+                            <FontAwesomeIcon icon={['fab', 'node-js']}/>
+                        </IconStyled>
+                    </div>
 
-                    <SkillContainerStyled className={'column is-flex'}>
-                        <IconStyled className={'icon column'}>
+                    <div className={'column is-flex u-justify-center'}>
+                        <IconStyled>
                             <FontAwesomeIcon icon={['fab', 'python']}/>
                         </IconStyled>
-                    </SkillContainerStyled>
+                    </div>
+                </div>
+                <BorderStyled/>
+                <div className={'columns'}>
+                    <div className={'column is-flex u-justify-end'}>
+                        <IconStyled size='small'>
+                            <FontAwesomeIcon icon={['fab', 'angular']}/>
+                        </IconStyled>
+                    </div>
+
+                    <div className={'column is-flex u-justify-center'}>
+                        <IconStyled size='small'>
+                            <FontAwesomeIcon icon={['fab', 'vuejs']}/>
+                        </IconStyled>
+                    </div>
+
+                    <div className={'column is-flex u-justify-start'}>
+                        <IconStyled size='small'>
+                            <FontAwesomeIcon icon={['fab', 'react']}/>
+                        </IconStyled>
+                    </div>
                 </div>
             </div>
         </SectionAltStyled>

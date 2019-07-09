@@ -1,7 +1,7 @@
 :root {
     --lic-font-heading: 'Alegreya Sans SC', sans-serif;
     --lic-font-body: 'Raleway', sans-serif;
-    --lic-color-primary: #282C34;
+    --lic-color-primary: #4a4a4a;
     --lic-color-secondary: #62BBB6;
     --lic-color-tertiary: #345764;
     --lic-color-quartinary: #E9EFEA;
@@ -33,23 +33,31 @@ p {
     color: var(--lic-color-quartinary);
 }
 
-.site-wrapper {
-    flex-direction: column;
-}
-
 header {
     position: relative;
     flex: 1;
 }
 
-.title-primary {
+.site-wrapper {
+    flex-direction: column;
+}
+
+.u-title-primary {
     color: var(--lic-color-quartinary) !important;
 }
 
-.title-secondary {
-    color: var(--lic-color-tertiary) !important;
+.u-title-secondary {
+    color: var(--lic-color-primary) !important;
 }
 
 .u-justify-center {
     justify-content: center;
+}
+
+.u-justify-start {
+    justify-content: flex-start;
+}
+
+.u-justify-end {
+    justify-content: flex-end;
 }

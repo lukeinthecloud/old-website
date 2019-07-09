@@ -1,18 +1,18 @@
 import styled from '@emotion/styled/macro';
 
-const profileImageScale = ' 200px';
+const profileImageScale = '9.375rem';
 
 export const ProfileContainerStyled = styled.div`
         display: flex;
         align-items: center;
         position: absolute;
-        top: 40%;
-        left: 40%;
+        top: 8.75rem;
+        left: 30%;
         z-index: 30;
         transform: translate(-50%, -50%);
         
         h1 {
-            margin-left: 20px;
+            margin-left: 1rem;
             color: var(--lic-color-primary) !important;
         }
         
@@ -29,19 +29,9 @@ export const ProfileImageStyled = styled.div`
         border-radius: ${profileImageScale};
         overflow: hidden;
         box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.37);
-    
-        &:before {
-          content: '';
-          position: absolute;
-          left: 0;
-          top: 0;
-          border-radius: 20vw;
-          width: 100%;
-          height: 100%;
-        }
-    
+  
         img {
           position: absolute;
-          top: -50px;
+          top: -3.125rem;
         }
     `;

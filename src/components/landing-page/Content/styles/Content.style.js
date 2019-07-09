@@ -1,12 +1,10 @@
 import styled from '@emotion/styled/macro';
 
-const iconBase = styled.i`
-  display: flex;
-  justify-content: center;
-  height: initial;
-`;
+const iconDefault = '5rem';
+const iconSmall = '4rem';
 
 export const SectionAltStyled = styled.section`
+  padding: 3rem 1.5rem;
   background: var(--lic-color-quartinary);
   
   p {
@@ -14,25 +12,8 @@ export const SectionAltStyled = styled.section`
   }
 `;
 
-export const SkillsStyled = styled.div`
-  display: flex;
-  position: absolute;
-  bottom: -1rem;
-  left: 50%;
-  transform: translateX(-50%);
+
+export const IconStyled = styled.i`
+  font-size: ${props => props.size === 'small' ? iconSmall : iconDefault};
+  line-height: 0;
 `;
-
-export const SkillContainerStyled = styled.div`
-  position: relative;
-`;
-
-export const IconStyled = styled(iconBase)`
-  font-size: 5rem;
-`;
-
-
-export const IconSmallStyled = styled(iconBase)`
-  width: initial;
-  font-size: 3rem;
-`;
-

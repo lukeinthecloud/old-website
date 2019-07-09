@@ -1,6 +1,6 @@
 export default {
     fonts: {
-        heading: `'Alegreya Sans SC', sans-serif`,
+        heading: `Alegreya Sans SC', sans-serif`,
         body: `'Raleway', sans-serif`,
     },
     colors: {
