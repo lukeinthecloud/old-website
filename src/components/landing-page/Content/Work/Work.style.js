@@ -12,10 +12,10 @@ export const WorkContainerStyled = styled.div`
   background: var(--lic-color-secondary);
 `;
 
-export const WorkHeading = styled.h3`
+export const WorkHeadingStyled = styled.h3`
   font-size: 1em;
 `;
 
-export const WorkDescription = styled.article`
+export const WorkDescriptionStyled = styled.article`
   font-size: ${props => props.containerSize === 'large' ? workContainerLarge : workContainerSmall};
 `;

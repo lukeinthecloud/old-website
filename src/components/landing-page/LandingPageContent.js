@@ -4,9 +4,11 @@ import Skills from './Content/Skills/Skills';
 import WorkSection from './Content/Work/WorkSection';
 
 export default function LandingPageContent() {
-    return ([
-        <Introduction/>,
-        <Skills/>,
-        <WorkSection/>
-    ]);
+    return (
+        <>
+            <Introduction/>
+            <Skills/>
+            <WorkSection/>
+        </>
+    );
 }

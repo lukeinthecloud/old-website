@@ -1,6 +1,6 @@
 import React from 'react';
 import WorkContainer from './WorkContainer';
-import {WorkSectionStyled} from './styles/Work.style';
+import {WorkSectionStyled} from './Work.style';
 
 export default function WorkSection() {
     return (
