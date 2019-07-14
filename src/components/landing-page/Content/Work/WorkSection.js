@@ -5,22 +5,30 @@ import {WorkSectionStyled} from './Work.style';
 export default function WorkSection() {
     return (
         <section className="section">
-            <WorkSectionStyled className="tile is-ancestor">
-                <div className="tile is-parent">
-                    <WorkContainer workContainerSize="large"/>
-                </div>
-                <div className="tile is-vertical is-8">
-                    <div className="tile">
-                        <div className="tile is-parent">
-                            <WorkContainer workContainerSize="large"/>
-                        </div>
-                        <div className="tile is-parent is-vertical">
-                            <WorkContainer/>
-                            <WorkContainer/>
+            <div className="container">
+                <WorkSectionStyled className="tile is-ancestor">
+                    <div className="tile is-parent">
+                        <WorkContainer
+                            workContainerSize="large"
+                            title='Project 1'
+                        />
+                    </div>
+                    <div className="tile is-vertical is-8">
+                        <div className="tile">
+                            <div className="tile is-parent">
+                                <WorkContainer
+                                    workContainerSize="large"
+                                    title='Project 2'
+                                />
+                            </div>
+                            <div className="tile is-parent is-vertical">
+                                <WorkContainer title='Project 3'/>
+                                <WorkContainer title='Project 4'/>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </WorkSectionStyled>
+                </WorkSectionStyled>
+            </div>
         </section>
     );
 }

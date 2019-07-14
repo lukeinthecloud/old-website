@@ -3,9 +3,11 @@ import {
     SectionAltStyled
 } from '../Content.style';
 import {
+    IconStyled,
     SkillContainerStyled,
     SkillWrapperStyled,
 } from './Skills.style';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 export default function Skills() {
     return (
@@ -15,17 +17,37 @@ export default function Skills() {
                     <SkillContainerStyled className="columns u-flex-column u-with-100">
                         <div className="column">
                             <div className="columns">
-                                <div className="column">
-                                    <h4 className="subtitle is-4">Languages</h4>
+                                <div className="column is-flex u-justify-center">
+                                    <h4 className="subtitle is-4 is-flex u-align-center">
+                                        Languages
+                                        <IconStyled className="is-flex u-justify-center">
+                                            <FontAwesomeIcon icon="code"/>
+                                        </IconStyled>
+                                    </h4>
                                 </div>
-                                <div className="column">
-                                    <h4 className="subtitle is-4">Frameworks</h4>
+                                <div className="column is-flex u-justify-center">
+                                    <h4 className="subtitle is-4 is-flex u-align-center">
+                                        Frameworks
+                                        <IconStyled className="is-flex u-justify-center">
+                                            <FontAwesomeIcon icon="crop-alt"/>
+                                        </IconStyled>
+                                    </h4>
                                 </div>
-                                <div className="column">
-                                    <h4 className="subtitle is-4">Libraries</h4>
+                                <div className="column is-flex u-justify-center">
+                                    <h4 className="subtitle is-4 is-flex u-align-center">
+                                        Libraries
+                                        <IconStyled className="is-flex u-justify-center">
+                                            <FontAwesomeIcon icon="book-open"/>
+                                        </IconStyled>
+                                    </h4>
                                 </div>
-                                <div className="column">
-                                    <h4 className="subtitle is-4">Database</h4>
+                                <div className="column is-flex u-justify-center">
+                                    <h4 className="subtitle is-4 is-flex u-align-center">
+                                        Database
+                                        <IconStyled className="is-flex u-justify-center">
+                                            <FontAwesomeIcon icon="database"/>
+                                        </IconStyled>
+                                    </h4>
                                 </div>
                             </div>
 

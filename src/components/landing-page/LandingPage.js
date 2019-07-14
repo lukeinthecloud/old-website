@@ -2,7 +2,6 @@ import React from 'react';
 import {library} from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-free-solid';
 import '@fortawesome/fontawesome-svg-core';
-import {faAngular, faReact, faVuejs, faPython, faJs, faNodeJs} from '@fortawesome/free-brands-svg-icons';
 import '@fortawesome/free-regular-svg-icons';
 import '@fortawesome/free-solid-svg-icons';
 
@@ -10,8 +9,9 @@ import LandingPageHeader from './LandingPageHeader';
 import LandingPageContent from './LandingPageContent';
 
 import styles from './landing-page.module.css';
+import {faCropAlt} from '@fortawesome/free-solid-svg-icons';
 
-library.add(faAngular, faReact, faVuejs, faPython, faJs, faNodeJs);
+library.add(faCropAlt);
 
 export default function LandingPage() {
     return (
