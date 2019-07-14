@@ -61,3 +61,15 @@ header {
 .u-justify-end {
     justify-content: flex-end;
 }
+
+.u-flex-column {
+    flex-direction: column;
+}
+
+.u-with-100 {
+    width: 100%;
+}
+
+.u-text-underline {
+    text-decoration: underline;
+}

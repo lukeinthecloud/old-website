@@ -1,6 +1,7 @@
 import React from 'react';
+
 import 'bulma/css/bulma.css';
-import './styling/global.css';
+import './styles/global.css';
 
 import LandingPage from './components/landing-page/LandingPage';
 

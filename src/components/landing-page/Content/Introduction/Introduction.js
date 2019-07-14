@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Introduction() {
     return (
-        <section className={'section'}>
+        <section className="section">
             <div className="container is-full">
                 <div className="columns">
                     <div className="column">
@@ -10,7 +10,7 @@ export default function Introduction() {
                     </div>
                 </div>
                 <div className="columns">
-                    <div className={'column'}>
+                    <div className="column">
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -21,7 +21,7 @@ export default function Introduction() {
                             culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                     </div>
-                    <div className={'column'}>
+                    <div className="column">
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

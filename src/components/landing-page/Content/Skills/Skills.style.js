@@ -1,9 +1,11 @@
 import styled from '@emotion/styled/macro';
 
-const iconDefault = '5rem';
-const iconSmall = '4rem';
-
-export const IconStyled = styled.i`
-  font-size: ${props => props.size === 'small' ? iconSmall : iconDefault};
-  line-height: 0;
+export const SkillWrapperStyled = styled.div`
+  margin-top: 1rem;
+  flex-direction: column;
 `;
+
+export const SkillContainerStyled = styled.div`
+  margin-top: .5rem;
+`;
+

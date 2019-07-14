@@ -8,9 +8,9 @@ export default function HeaderProfile() {
             <ProfileImageStyled>
                 <img src={profilePicture} alt="Luke Babich Profile"/>
             </ProfileImageStyled>
-            <h1 className={`title is-1`}>
+            <h1 className="title is-1">
                 Luke Babich
-                <small className={'subtitle is-6'}>Software Developer</small>
+                <small className="subtitle is-6">Software Developer</small>
             </h1>
         </ProfileContainerStyled>
     );
