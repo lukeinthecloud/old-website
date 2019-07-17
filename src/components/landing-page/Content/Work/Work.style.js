@@ -15,6 +15,7 @@ export const WorkContainerStyled = styled.div`
   flex-direction: column;
   justify-content: space-between;
   font-size: ${props => props.containerSize === 'large' ? workContainerLarge : workContainerSmall};
+  border-radius: 0;
   && {
     background-color: transparent;
   }

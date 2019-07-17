@@ -16,9 +16,12 @@
     "bulma": "^0.7.5",
     "emotion": "^10.0.14",
     "emotion-theming": "^10.0.14",
+    "pixi-particles": "^4.1.2",
+    "pixi.js": "^5.0.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "redux": "^4.0.4"
   },
   "scripts": {
     "start": "react-scripts start",

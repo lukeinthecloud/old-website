@@ -11,6 +11,7 @@ export default function WorkSection() {
                         <WorkContainer
                             workContainerSize="large"
                             title='Project 1'
+                            id="1"
                         />
                     </div>
                     <div className="tile is-vertical is-8">
@@ -19,11 +20,18 @@ export default function WorkSection() {
                                 <WorkContainer
                                     workContainerSize="large"
                                     title='Project 2'
+                                    id="2"
                                 />
                             </div>
                             <div className="tile is-parent is-vertical">
-                                <WorkContainer title='Project 3'/>
-                                <WorkContainer title='Project 4'/>
+                                <WorkContainer
+                                    title='Project 3'
+                                    id="3"
+                                />
+                                <WorkContainer
+                                    title='Project 4'
+                                    id="4"
+                                />
                             </div>
                         </div>
                     </div>
