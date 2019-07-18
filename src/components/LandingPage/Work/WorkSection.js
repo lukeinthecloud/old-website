@@ -1,12 +1,36 @@
-import React from 'react';
+import React, {useEffect, useRef, useState} from 'react';
+import * as _ from 'lodash';
+
 import WorkContainer from './WorkContainer';
 import {WorkSectionStyled} from './Work.style';
 
 export default function WorkSection() {
+    const containerRef = useRef();
+    const [dimensions, _setDimensions] = useState({width: 0, height: 0});
+
+    useEffect(() => {
+        const resizeEvent = window.addEventListener('resize', _.debounce(_updateDimensions, 1000));
+
+        return () => {
+            window.removeEventListener('resize', resizeEvent, false);
+        }
+    }, []);
+
+    useEffect(() => {
+        _updateDimensions();
+    }, []);
+
+    function _updateDimensions() {
+        if (containerRef.current) {
+            const {width, height} = containerRef.current.getBoundingClientRect();
+            _setDimensions({width, height});
+        }
+    }
+
     return (
         <section className="section">
             <div className="container">
-                <WorkSectionStyled className="tile is-ancestor">
+                <WorkSectionStyled ref={containerRef} className="tile is-ancestor">
                     <div className="tile is-parent">
                         <WorkContainer
                             workContainerSize="large"

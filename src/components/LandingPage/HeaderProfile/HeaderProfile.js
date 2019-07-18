@@ -1,5 +1,7 @@
 import React from 'react';
+
 import profilePicture from './profile-picture.jpg'
+
 import {ProfileContainerStyled, ProfileImageStyled} from './HeaderProfile.style';
 
 export default function HeaderProfile() {

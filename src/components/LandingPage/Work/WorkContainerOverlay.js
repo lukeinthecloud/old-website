@@ -1,5 +1,7 @@
 import React from 'react';
+
 import ParticleContainer from '../Particle/ParticleContainer';
+
 import {WorkImageBackgroundStyled, WorkOverlayStyled} from './Work.style';
 
 export default function WorkContainerOverlay(props) {

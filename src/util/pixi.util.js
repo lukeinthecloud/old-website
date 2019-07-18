@@ -13,10 +13,10 @@ function generateCircle() {
     return circle;
 }
 
-function generatePixiParticleEmitter({container, circleTexture, particleConfig}) {
+function generatePixiParticleEmitter({container, texture, particleConfig}) {
     const emitter = new particles.Emitter(
         container,
-        circleTexture,
+        texture,
         particleConfig
     );
     return emitter

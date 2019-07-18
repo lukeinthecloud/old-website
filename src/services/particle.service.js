@@ -1,36 +1,45 @@
 import * as PIXI from 'pixi.js';
+
 import {pixiUtil} from '../util/pixi.util';
-import {particleConfig} from '../components/landing-page/Content/Particle/particle-config.const';
+import {particleConfig} from '../components/LandingPage/Particle/particle-config.const';
 
 export function createRenderer() {
     const renderer = PIXI.autoDetectRenderer({transparent: true});
     const stage = new PIXI.Container();
     const container = new PIXI.Container();
-    const emitter = _createEmitter(container, renderer);
+    const texture = _createTexture(renderer);
+    const emitter = _createEmitter(container, renderer, texture);
 
     stage.addChild(container);
 
     return {
         emitter,
         stage,
-        renderer
+        renderer,
+        texture
     };
 }
 
-export function start(elapsed, particleEngine) {
-    _updateParticles(elapsed, particleEngine);
+export function startParticles(elapsed, particleEngine) {
+    _animateParticles(elapsed, particleEngine);
 }
 
-export function updateRenderScale() {
-    // renderer.view.style.width = '100px';
+export function destroy(particleEngine, requestID) {
+    // cancelAnimationFrame(requestID);
+    // particleEngine.emitter.emit = false;
+    // particleEngine.texture.destroy();
+    // destroyNodeCallback();
 }
 
-function _createEmitter(container, renderer) {
+function _createTexture(renderer) {
     const circle = pixiUtil.generateCircle(renderer);
-    const circleTexture = renderer.generateTexture(circle, 1, 1);
+    const texture = renderer.generateTexture(circle, 1, 1);
+    return texture;
+}
 
+function _createEmitter(container, renderer, texture) {
     const emitter = pixiUtil.generatePixiParticleEmitter({
-        circleTexture,
+        texture,
         container,
         particleConfig
     });
@@ -45,11 +54,13 @@ function _positionEmitter(emitter, renderer) {
     emitter.ownerPos.y = renderer.view.height / 2;
 }
 
-function _updateParticles(elapsed, particleEngine) {
+function _animateParticles(elapsed, particleEngine) {
     let now = Date.now();
     particleEngine.emitter.update((now - elapsed) * 0.001);
     elapsed = now;
-    requestAnimationFrame(_updateParticles.bind(_updateParticles, elapsed, particleEngine));
+    requestAnimationFrame(() => {
+        _animateParticles(elapsed, particleEngine);
+    });
     particleEngine.renderer.render(particleEngine.stage);
 }
 

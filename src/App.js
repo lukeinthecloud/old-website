@@ -3,7 +3,7 @@ import React from 'react';
 import 'bulma/css/bulma.css';
 import './styles/global.css';
 
-import LandingPage from './components/landing-page/LandingPage';
+import LandingPage from './components/LandingPage/LandingPage';
 
 function App() {
     return (

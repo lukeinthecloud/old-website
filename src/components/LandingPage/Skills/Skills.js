@@ -1,13 +1,14 @@
 import React from 'react';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+
 import {
-    SectionAltStyled
-} from '../Content.style';
-import {
+
     IconStyled,
     SkillContainerStyled,
     SkillWrapperStyled,
 } from './Skills.style';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+
+import {SectionAltStyled} from '../LandingPage.style';
 
 export default function Skills() {
     return (
@@ -128,8 +129,6 @@ export default function Skills() {
                                 </div>
                             </div>
                         </div>
-
-
                     </SkillContainerStyled>
                 </SkillWrapperStyled>
             </div>

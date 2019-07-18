@@ -1,8 +1,9 @@
 import React from 'react';
-import Introduction from './Content/Introduction/Introduction';
-import Skills from './Content/Skills/Skills';
-import WorkSection from './Content/Work/WorkSection';
-import Footer from './Content/Footer/Footer';
+
+import Introduction from './Introduction/Introduction';
+import Skills from './Skills/Skills';
+import WorkSection from './Work/WorkSection';
+import Footer from '../Footer/Footer';
 
 export default function LandingPageContent() {
     return (

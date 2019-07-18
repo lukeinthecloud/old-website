@@ -12,3 +12,13 @@ export const HeaderDividerStyled = styled.div`
   box-shadow: 21px 10px 42px -2px rgba(0,0,0,0.57);
   z-index: 0;
 `;
+
+
+export const SectionAltStyled = styled.section`
+  padding: 3rem 1.5rem;
+  background: var(--lic-color-quartinary);
+  
+  p {
+    color: var(--lic-color-primary) !important;
+  }
+`;

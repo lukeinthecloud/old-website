@@ -1,6 +1,7 @@
 import React from 'react';
-import {FooterSocialLinksListStyled, FooterSocialLinkStyled, FooterStyled} from './Footer.style';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+
+import {FooterSocialLinksListStyled, FooterSocialLinkStyled, FooterStyled} from './Footer.style';
 
 export default function Footer() {
     return (
