@@ -3,7 +3,7 @@ import * as PIXI from 'pixi.js';
 import {pixiUtil} from '../util/pixi.util';
 import {particleConfig} from '../components/LandingPage/Particle/particle-config.const';
 
-export function createRenderer() {
+export function createParticleEngine() {
     const renderer = PIXI.autoDetectRenderer({transparent: true});
     const stage = new PIXI.Container();
     const container = new PIXI.Container();
@@ -21,20 +21,19 @@ export function createRenderer() {
     };
 }
 
-
-export function initiateAnimation(particleEngine) {
-    const elapsed = Date.now();
+export function initiateParticleEngine(particleEngine, elapsed) {
     let requestIdentifier = null;
+    let now = Date.now();
 
     function startParticles() {
         requestIdentifier = null;
         _animateParticles(elapsed, particleEngine);
     }
-    
+
     function _animateParticles(elapsed, particleEngine) {
-        let now = Date.now();
         particleEngine.emitter.update((now - elapsed) * 0.001);
         elapsed = now;
+
         if (!requestIdentifier) {
             requestIdentifier = requestAnimationFrame(() => {
                 startParticles(elapsed, particleEngine);
@@ -47,12 +46,12 @@ export function initiateAnimation(particleEngine) {
     startParticles();
 
     return () => {
-        debugger;
         cancelAnimationFrame(requestIdentifier);
+        destroy(particleEngine);
     }
 }
 
-export function destroy(particleEngine) {
+function destroy(particleEngine) {
     particleEngine.emitter.emit = false;
     particleEngine.emitter.destroy();
 

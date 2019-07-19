@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5bd7e68e-2bb5-425b-bfc2-3ab885625c1f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LandingPage/Particle/ParticleContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingPage/Particle/ParticleContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainerOverlay.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainerOverlay.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LandingPage/Work/WorkSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingPage/Work/WorkSection.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/particle.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/particle.service.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Particle/ParticleContainer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="12" selection-start-line="12" selection-end-line="31" selection-end-column="51" />
+            <state relative-caret-position="532">
+              <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -35,15 +31,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/services/particle.service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+            <state relative-caret-position="648">
+              <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
               <folding>
-                <element signature="n#!!block;n#createRenderer#0" />
-                <element signature="e#510#602#0" />
-                <element signature="n#!!block;n#destroy#0" />
+                <element signature="e#0#32#0" expanded="true" />
                 <element signature="n#!!block;n#_createTexture#0" />
                 <element signature="n#!!block;n#_createEmitter#0" />
                 <element signature="e#1239#1305#0" />
@@ -158,8 +152,8 @@
         <option value="$PROJECT_DIR$/src/components/LandingPage/Work/WorkSection.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainer.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainerOverlay.js" />
-        <option value="$PROJECT_DIR$/src/services/particle.service.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/Particle/ParticleContainer.js" />
+        <option value="$PROJECT_DIR$/src/services/particle.service.js" />
       </list>
     </option>
   </component>
@@ -298,12 +292,12 @@
       <workItem from="1563382935915" duration="71000" />
       <workItem from="1563383192918" duration="16666000" />
       <workItem from="1563476569980" duration="12813000" />
-      <workItem from="1563576353818" duration="1284000" />
+      <workItem from="1563576353818" duration="2586000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124567000" />
+    <option name="totallyTimeSpent" value="125869000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1738" height="1407" extended-state="0" />
@@ -641,28 +635,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/particle.service.js">
+    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Particle/ParticleContainer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+        <state relative-caret-position="532">
+          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
           <folding>
-            <element signature="n#!!block;n#createRenderer#0" />
-            <element signature="e#510#602#0" />
-            <element signature="n#!!block;n#destroy#0" />
-            <element signature="n#!!block;n#_createTexture#0" />
-            <element signature="n#!!block;n#_createEmitter#0" />
-            <element signature="e#1239#1305#0" />
-            <element signature="n#!!block;n#_positionEmitter#0" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Particle/ParticleContainer.js">
+    <entry file="file://$PROJECT_DIR$/src/services/particle.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="12" selection-start-line="12" selection-end-line="31" selection-end-column="51" />
+        <state relative-caret-position="648">
+          <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
+            <element signature="n#!!block;n#_createTexture#0" />
+            <element signature="n#!!block;n#_createEmitter#0" />
+            <element signature="e#1239#1305#0" />
+            <element signature="n#!!block;n#_positionEmitter#0" />
           </folding>
         </state>
       </provider>

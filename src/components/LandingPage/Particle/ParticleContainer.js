@@ -4,36 +4,17 @@ import {ParticleContainerStyled} from './Particle.style';
 
 export default function ParticleContainer(props) {
     useEffect(() => {
+        const elapsed = Date.now();
         const containerIdentifier = `particle-container-${props.identifier}`;
         let canvasContainer = document.getElementById(containerIdentifier);
-        let particleEngine = particleService.createRenderer();
+        let particleEngine = particleService.createParticleEngine();
 
         canvasContainer.appendChild(particleEngine.renderer.view);
-        const stopParticles = particleService.initiateAnimation(particleEngine);
-        // let requestIdentifier = null;
-        //
-        // function startParticles(elapsed, particleEngine) {
-        //     requestIdentifier = null;
-        //     _animateParticles(elapsed, particleEngine);
-        // }
-        //
-        // function _animateParticles(elapsed, particleEngine) {
-        //     let now = Date.now();
-        //     particleEngine.emitter.update((now - elapsed) * 0.001);
-        //     elapsed = now;
-        //     if (!requestIdentifier) {
-        //         requestIdentifier = requestAnimationFrame(() => {
-        //             startParticles(elapsed, particleEngine);
-        //         });
-        //     }
-        //     particleEngine.renderer.render(particleEngine.stage);
-        // }
-        //
-        // startParticles(elapsed, particleEngine);
+
+        const destroyParticleEngine = particleService.initiateParticleEngine(particleEngine, elapsed);
 
         return () => {
-            stopParticles();
-            particleService.destroy(particleEngine);
+            destroyParticleEngine();
             canvasContainer.parentNode.removeChild(canvasContainer);
             canvasContainer = null;
             particleEngine = null;
