@@ -35,6 +35,7 @@ export default function WorkSection() {
                         <WorkContainer
                             workContainerSize="large"
                             title='Project 1'
+                            dimensions={dimensions}
                             id="1"
                         />
                     </div>
@@ -44,16 +45,19 @@ export default function WorkSection() {
                                 <WorkContainer
                                     workContainerSize="large"
                                     title='Project 2'
+                                    dimensions={dimensions}
                                     id="2"
                                 />
                             </div>
                             <div className="tile is-parent is-vertical">
                                 <WorkContainer
                                     title='Project 3'
+                                    dimensions={dimensions}
                                     id="3"
                                 />
                                 <WorkContainer
                                     title='Project 4'
+                                    dimensions={dimensions}
                                     id="4"
                                 />
                             </div>

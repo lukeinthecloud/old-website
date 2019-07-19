@@ -7,7 +7,9 @@ import {WorkImageBackgroundStyled, WorkOverlayStyled} from './Work.style';
 export default function WorkContainerOverlay(props) {
     return (
         <>
-            <ParticleContainer identifier={props.id}/>
+            <ParticleContainer
+                identifier={props.id}
+                dimensions={props.dimensions}/>
             <WorkOverlayStyled>
                 <WorkImageBackgroundStyled backgroundImage='https://i.ytimg.com/vi/gUIJ-UkQsXI/maxresdefault.jpg'/>
             </WorkOverlayStyled>

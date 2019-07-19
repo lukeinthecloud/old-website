@@ -28,7 +28,9 @@ export default function WorkContainer(props) {
                     <span><b>/ Node</b></span>
                     <span><b>/ Netlify</b></span>
                 </WorkSkillsContainerListStyled>
-                <WorkContainerOverlay id={props.id}/>
+                <WorkContainerOverlay
+                    id={props.id}
+                    dimensions={props.dimensions}/>
             </WorkContainerStyled>
         )
     }
@@ -50,7 +52,9 @@ export default function WorkContainer(props) {
                     ed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco.
                 </WorkDescriptionStyled>
-                <WorkContainerOverlay id={props.id}/>
+                <WorkContainerOverlay
+                    id={props.id}
+                    dimensions={props.dimensions}/>
             </WorkContainerStyled>
         )
     }

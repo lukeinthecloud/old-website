@@ -13,6 +13,7 @@ export function createRenderer() {
     stage.addChild(container);
 
     return {
+        container,
         emitter,
         stage,
         renderer,
@@ -20,20 +21,52 @@ export function createRenderer() {
     };
 }
 
-export function startParticles(elapsed, particleEngine) {
-    _animateParticles(elapsed, particleEngine);
+
+export function initiateAnimation(particleEngine) {
+    const elapsed = Date.now();
+    let requestIdentifier = null;
+
+    function startParticles() {
+        requestIdentifier = null;
+        _animateParticles(elapsed, particleEngine);
+    }
+    
+    function _animateParticles(elapsed, particleEngine) {
+        let now = Date.now();
+        particleEngine.emitter.update((now - elapsed) * 0.001);
+        elapsed = now;
+        if (!requestIdentifier) {
+            requestIdentifier = requestAnimationFrame(() => {
+                startParticles(elapsed, particleEngine);
+            });
+        }
+
+        particleEngine.renderer.render(particleEngine.stage);
+    }
+
+    startParticles();
+
+    return () => {
+        debugger;
+        cancelAnimationFrame(requestIdentifier);
+    }
 }
 
-export function destroy(particleEngine, requestID) {
-    // cancelAnimationFrame(requestID);
-    // particleEngine.emitter.emit = false;
-    // particleEngine.texture.destroy();
-    // destroyNodeCallback();
+export function destroy(particleEngine) {
+    particleEngine.emitter.emit = false;
+    particleEngine.emitter.destroy();
+
+    particleEngine.texture.destroy();
+
+    particleEngine.stage.removeChild(particleEngine.container);
+    particleEngine.renderer.destroy(particleEngine.stage);
+    particleEngine.renderer = null;
 }
 
 function _createTexture(renderer) {
     const circle = pixiUtil.generateCircle(renderer);
     const texture = renderer.generateTexture(circle, 1, 1);
+    circle.destroy();
     return texture;
 }
 
@@ -53,14 +86,3 @@ function _positionEmitter(emitter, renderer) {
     emitter.ownerPos.x = renderer.view.width / 2;
     emitter.ownerPos.y = renderer.view.height / 2;
 }
-
-function _animateParticles(elapsed, particleEngine) {
-    let now = Date.now();
-    particleEngine.emitter.update((now - elapsed) * 0.001);
-    elapsed = now;
-    requestAnimationFrame(() => {
-        _animateParticles(elapsed, particleEngine);
-    });
-    particleEngine.renderer.render(particleEngine.stage);
-}
-
