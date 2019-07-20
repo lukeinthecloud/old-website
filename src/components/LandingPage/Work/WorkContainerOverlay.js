@@ -8,8 +8,7 @@ export default function WorkContainerOverlay(props) {
     return (
         <>
             <ParticleContainer
-                identifier={props.id}
-                dimensions={props.dimensions}/>
+                identifier={props.id}/>
             <WorkOverlayStyled>
                 <WorkImageBackgroundStyled backgroundImage='https://i.ytimg.com/vi/gUIJ-UkQsXI/maxresdefault.jpg'/>
             </WorkOverlayStyled>
