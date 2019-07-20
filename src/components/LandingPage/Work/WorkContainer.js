@@ -1,17 +1,70 @@
-import React, {useState} from 'react';
+import React from 'react';
 
-import SmallWorkContainer from './SmallWorkContainer';
-import LargeWorkContainer from './LargeWorkContainer';
+import {
+    WorkContainerStyled,
+    WorkDescriptionStyled,
+    WorkHeadingStyled,
+    WorkSkillsContainerListStyled
+
+} from './Work.style';
+
+import WorkContainerOverlay from './WorkContainerOverlay';
 
 export default function WorkContainer(props) {
-    // const [dimensions, _setDimensions] = useState({width: 0, height: 0});
+    function LargeWorkContainer() {
+        return (
+            <WorkContainerStyled className="tile is-child notification"
+                                 containerSize={`${props.workContainerSize}`}>
+                <WorkHeadingStyled className="title">{props.title}</WorkHeadingStyled>
+                <WorkDescriptionStyled>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, s
+                        ed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                    </p>
+                </WorkDescriptionStyled>
+                <WorkSkillsContainerListStyled>
+                    <span><b>React</b></span>
+                    <span><b>/ Node</b></span>
+                    <span><b>/ Netlify</b></span>
+                </WorkSkillsContainerListStyled>
+                <WorkContainerOverlay
+                    id={props.id}
+                    dimensions={props.dimensions}/>
+            </WorkContainerStyled>
+        )
+    }
+
+    function SmallWorkContainer() {
+        return (
+            <WorkContainerStyled className="tile is-child notification"
+                                 containerSize={`${props.workContainerSize}`}>
+                <WorkHeadingStyled className="title">
+                    {props.title}
+                    <WorkSkillsContainerListStyled>
+                        <span><b>React</b></span>
+                        <span><b>/ Node</b></span>
+                        <span><b>/ Netlify</b></span>
+                    </WorkSkillsContainerListStyled>
+                </WorkHeadingStyled>
+                <WorkDescriptionStyled>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, s
+                    ed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                </WorkDescriptionStyled>
+                <WorkContainerOverlay
+                    id={props.id}
+                    dimensions={props.dimensions}/>
+            </WorkContainerStyled>
+        )
+    }
 
     return (
         <>
             {
                 props.workContainerSize === 'large' ?
-                    <LargeWorkContainer id={props.id} title={props.title}/> :
-                    <SmallWorkContainer id={props.id} title={props.title}/>
+                    <LargeWorkContainer/> :
+                    <SmallWorkContainer/>
             }
         </>
     )

@@ -12,6 +12,7 @@ export default function ParticleContainer(props) {
         let canvasContainer = document.getElementById(containerIdentifier);
         canvasContainer.appendChild(particleEngine.renderer.view);
         const destroyParticleEngine = particleService.initiateParticleEngine(particleEngine, elapsed);
+
         return () => {
             destroyParticleEngine();
             canvasContainer.parentNode.removeChild(canvasContainer);
@@ -19,6 +20,8 @@ export default function ParticleContainer(props) {
         }
     }, [
         props.identifier,
+        props.dimensions.width,
+        props.dimensions.height,
         particleEngine,
         dimensions
     ]);
