@@ -1,10 +1,12 @@
 import React, {useEffect, useContext} from 'react';
 import {ParticleContainerStyled} from './Particle.style';
-import {WorkSectionContext} from './PartileContext';
 import * as particleService from '../../../services/particle.service';
+import {ParticleContainerContext} from './ParticleContainerContext';
+import {WorkContainerContext} from '../Work/WorkContainerContext';
 
 export default function ParticleContainer(props) {
-    const {particleEngine, dimensions} = useContext(WorkSectionContext);
+    const {particleEngine} = useContext(ParticleContainerContext);
+    const {dimensions} = useContext(WorkContainerContext);
 
     useEffect(() => {
         const elapsed = Date.now();

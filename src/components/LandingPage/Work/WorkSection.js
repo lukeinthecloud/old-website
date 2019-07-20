@@ -1,16 +1,42 @@
-import React, {useEffect, useRef, useState} from 'react';
-import * as _ from 'lodash';
+import React, {useEffect, useState, useRef} from 'react';
+
 
 import WorkContainer from './WorkContainer';
 import {WorkSectionStyled} from './Work.style';
-import * as particleService from '../../../services/particle.service';
-import {WorkSectionContext} from '../Particle/PartileContext';
-import WorkContainerLarge from './WorkContainerLarge';
+import * as _ from 'lodash';
+
+const workResponse = [
+    {
+        id: 1,
+        title: 'Project 1',
+        description: 'Hello World',
+        links: []
+    },
+    // {
+    //     id: 2,
+    //     title: 'Project 2',
+    //     description: 'Hello World',
+    //     links: []
+    // },
+    // {
+    //     id: 3,
+    //     title: 'Project 3',
+    //     description: 'Hello World',
+    //     links: []
+    // },
+    // {
+    //     id: 4,
+    //     title: 'Project 4',
+    //     description: 'Hello World',
+    //     links: []
+    // }
+];
+
 
 export default function WorkSection() {
-    const containerRef = useRef(null);
+    let workContainers = [];
+    const containerRefs = useRef({});
     const [dimensions, _setDimensions] = useState({width: 0, height: 0});
-    const particleEngine = particleService.createParticleEngine();
 
     useEffect(() => {
         const resizeEvent = window.addEventListener('resize', _.debounce(_updateDimensions, 1000));
@@ -25,49 +51,33 @@ export default function WorkSection() {
     }, []);
 
     function _updateDimensions() {
-        if (containerRef.current) {
-            const {width, height} = containerRef.current.getBoundingClientRect();
-            _setDimensions({width, height});
-        }
+        // if (containerRef.current) {
+        //     const {width, height} = containerRef.current.getBoundingClientRect();
+        //     _setDimensions({width, height});
+        // }
     }
 
+    function createWorkContainers() {
+        workContainers = workResponse.map((workItem) => {
+            return (
+                <div className="tile is-parent" key={workItem.id.toString()}>
+                    <WorkContainer
+                        workContainerSize="large"
+                        workData={workItem}
+                    />
+                </div>
+            )
+        });
+    }
+
+    createWorkContainers();
     return (
         <section className="section">
-            <WorkSectionContext.Provider value={{
-                particleEngine
-            }}>
-                <div className="container">
-                    <WorkSectionStyled ref={containerRef} className="tile is-ancestor">
-                        <div className="tile is-parent">
-                            <WorkContainerLarge title="Project 1" id="1"/>
-                        </div>
-                        <div className="tile is-vertical is-8">
-                            <div className="tile">
-                                <div className="tile is-parent">
-                                    {/*<WorkContainer*/}
-                                    {/*    workContainerSize="large"*/}
-                                    {/*    title='Project 2'*/}
-                                    {/*    dimensions={dimensions}*/}
-                                    {/*    id="2"*/}
-                                    {/*/>*/}
-                                </div>
-                                <div className="tile is-parent is-vertical">
-                                    {/*<WorkContainer*/}
-                                    {/*    title='Project 3'*/}
-                                    {/*    dimensions={dimensions}*/}
-                                    {/*    id="3"*/}
-                                    {/*/>*/}
-                                    {/*<WorkContainer*/}
-                                    {/*    title='Project 4'*/}
-                                    {/*    dimensions={dimensions}*/}
-                                    {/*    id="4"*/}
-                                    {/*/>*/}
-                                </div>
-                            </div>
-                        </div>
-                    </WorkSectionStyled>
-                </div>
-            </WorkSectionContext.Provider>
+            <div className="container">
+                <WorkSectionStyled className="tile is-ancestor">
+                    {workContainers}
+                </WorkSectionStyled>
+            </div>
         </section>
 
     );

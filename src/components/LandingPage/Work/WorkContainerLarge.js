@@ -9,17 +9,16 @@ import {
 import WorkContainerOverlay from './WorkContainerOverlay';
 
 export default function WorkContainerLarge(props) {
+    const {title, id, description} = props.workData;
     return (
         <WorkContainerStyled className="tile is-child notification"
                              containerSize="large">
             <WorkHeadingStyled className="title">
-                {props.title}
+                {title}
             </WorkHeadingStyled>
             <WorkDescriptionStyled>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, s
-                    ed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                    {description}
                 </p>
             </WorkDescriptionStyled>
             <WorkSkillsContainerListStyled>
@@ -28,7 +27,7 @@ export default function WorkContainerLarge(props) {
                 <span><b>/ Netlify</b></span>
             </WorkSkillsContainerListStyled>
             <WorkContainerOverlay
-                id={props.id}/>
+                id={id}/>
         </WorkContainerStyled>
     )
 }
