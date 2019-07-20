@@ -1,28 +1,33 @@
-import React, {useEffect} from 'react';
-import * as particleService from '../../../services/particle.service';
+import React, {useEffect, useContext} from 'react';
 import {ParticleContainerStyled} from './Particle.style';
+import {ParticleEngineContext} from './PartileContext';
+import * as particleService from '../../../services/particle.service';
 
 export default function ParticleContainer(props) {
+    const {particleEngine, dimensions} = useContext(ParticleEngineContext);
+
     useEffect(() => {
-        const elapsed = Date.now();
+        let elapsed = Date.now();
         const containerIdentifier = `particle-container-${props.identifier}`;
         let canvasContainer = document.getElementById(containerIdentifier);
-        let particleEngine = particleService.createParticleEngine();
-
         canvasContainer.appendChild(particleEngine.renderer.view);
-
         const destroyParticleEngine = particleService.initiateParticleEngine(particleEngine, elapsed);
 
         return () => {
             destroyParticleEngine();
             canvasContainer.parentNode.removeChild(canvasContainer);
             canvasContainer = null;
-            particleEngine = null;
         }
-    }, [props.identifier, props.dimensions.width, props.dimensions.height]);
+    }, [
+        props.identifier,
+        props.dimensions.width,
+        props.dimensions.height,
+        particleEngine,
+        dimensions
+    ]);
 
     return (
-        <ParticleContainerStyled id={`particle-container-${props.identifier}`}/>
+        <ParticleContainerStyled id={`particle-container-${props.identifier}`} className="particle-container"/>
     );
 };
 

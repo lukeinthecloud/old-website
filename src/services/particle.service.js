@@ -23,27 +23,28 @@ export function createParticleEngine() {
 
 export function initiateParticleEngine(particleEngine, elapsed) {
     let requestIdentifier = null;
-    let now = Date.now();
+    particleEngine.emitter.emit = true;
+    startParticles(particleEngine, elapsed);
 
-    function startParticles() {
+    function startParticles(elapsedTime, particleEngine) {
         requestIdentifier = null;
-        _animateParticles(elapsed, particleEngine);
+        _animateParticles(elapsedTime, particleEngine);
     }
 
-    function _animateParticles(elapsed, particleEngine) {
-        particleEngine.emitter.update((now - elapsed) * 0.001);
-        elapsed = now;
+    function _animateParticles(particleEngine, elapsedTime) {
+        let now = Date.now();
+        particleEngine.emitter.update((now - elapsedTime) * 0.001);
+        elapsedTime = now;
 
         if (!requestIdentifier) {
             requestIdentifier = requestAnimationFrame(() => {
-                startParticles(elapsed, particleEngine);
+                startParticles(particleEngine, elapsedTime);
             });
         }
 
         particleEngine.renderer.render(particleEngine.stage);
     }
 
-    startParticles();
 
     return () => {
         cancelAnimationFrame(requestIdentifier);
@@ -54,11 +55,9 @@ export function initiateParticleEngine(particleEngine, elapsed) {
 function destroy(particleEngine) {
     particleEngine.emitter.emit = false;
     particleEngine.emitter.destroy();
-
     particleEngine.texture.destroy();
-
     particleEngine.stage.removeChild(particleEngine.container);
-    particleEngine.renderer.destroy(particleEngine.stage);
+    particleEngine.renderer.destroy(true);
     particleEngine.renderer = null;
 }
 
