@@ -3,6 +3,8 @@ import * as PIXI from 'pixi.js';
 import {pixiUtil} from '../util/pixi.util';
 import {particleConfig} from '../components/LandingPage/Particle/particle-config.const';
 
+let requestIdentifier = null;
+
 export function createParticleEngine() {
     const renderer = PIXI.autoDetectRenderer({transparent: true});
     const stage = new PIXI.Container();
@@ -22,34 +24,33 @@ export function createParticleEngine() {
 }
 
 export function initiateParticleEngine(particleEngine, elapsed) {
-    let requestIdentifier = null;
     particleEngine.emitter.emit = true;
     startParticles(particleEngine, elapsed);
-
-    function startParticles(elapsedTime, particleEngine) {
-        requestIdentifier = null;
-        _animateParticles(elapsedTime, particleEngine);
-    }
-
-    function _animateParticles(particleEngine, elapsedTime) {
-        let now = Date.now();
-        particleEngine.emitter.update((now - elapsedTime) * 0.001);
-        elapsedTime = now;
-
-        if (!requestIdentifier) {
-            requestIdentifier = requestAnimationFrame(() => {
-                startParticles(particleEngine, elapsedTime);
-            });
-        }
-
-        particleEngine.renderer.render(particleEngine.stage);
-    }
-
 
     return () => {
         cancelAnimationFrame(requestIdentifier);
         destroy(particleEngine);
+        requestIdentifier = null;
     }
+}
+
+function startParticles(elapsedTime, particleEngine) {
+    requestIdentifier = null;
+    _animateParticles(elapsedTime, particleEngine);
+}
+
+function _animateParticles(particleEngine, elapsedTime) {
+    let now = Date.now();
+    particleEngine.emitter.update((now - elapsedTime) * 0.001);
+    elapsedTime = now;
+
+    if (!requestIdentifier) {
+        requestIdentifier = requestAnimationFrame(() => {
+            startParticles(particleEngine, elapsedTime);
+        });
+    }
+
+    particleEngine.renderer.render(particleEngine.stage);
 }
 
 function destroy(particleEngine) {
@@ -64,7 +65,6 @@ function destroy(particleEngine) {
 function _createTexture(renderer) {
     const circle = pixiUtil.generateCircle(renderer);
     const texture = renderer.generateTexture(circle, 1, 1);
-    circle.destroy();
     return texture;
 }
 
