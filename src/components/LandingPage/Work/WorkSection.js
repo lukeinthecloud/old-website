@@ -1,6 +1,5 @@
 import React, {useEffect, useState, useRef} from 'react';
 
-
 import WorkContainer from './WorkContainer';
 import {WorkSectionStyled} from './Work.style';
 import * as _ from 'lodash';
@@ -12,12 +11,12 @@ const workResponse = [
         description: 'Hello World',
         links: []
     },
-    // {
-    //     id: 2,
-    //     title: 'Project 2',
-    //     description: 'Hello World',
-    //     links: []
-    // },
+    {
+        id: 2,
+        title: 'Project 2',
+        description: 'Hello World',
+        links: []
+    },
     // {
     //     id: 3,
     //     title: 'Project 3',
@@ -34,9 +33,15 @@ const workResponse = [
 
 
 export default function WorkSection() {
-    let workContainers = [];
-    const containerRefs = useRef({});
-    const [dimensions, _setDimensions] = useState({width: 0, height: 0});
+    const containerRef = useRef(null);
+    const [workContainers, setWorkContainers] = useState([]);
+    const [dimensions, setDimensions] = useState({width: 0, height: 0});
+
+
+    useEffect(() => {
+        _updateDimensions();
+        createWorkContainers();
+    }, []);
 
     useEffect(() => {
         const resizeEvent = window.addEventListener('resize', _.debounce(_updateDimensions, 1000));
@@ -46,33 +51,35 @@ export default function WorkSection() {
         }
     }, []);
 
-    useEffect(() => {
-        _updateDimensions();
-    }, []);
-
     function _updateDimensions() {
-        // if (containerRef.current) {
-        //     const {width, height} = containerRef.current.getBoundingClientRect();
-        //     _setDimensions({width, height});
-        // }
+        createWorkContainers();
+        if (containerRef.current) {
+            const {width, height} = containerRef.current.getBoundingClientRect();
+            setDimensions({width, height});
+        }
     }
 
     function createWorkContainers() {
-        workContainers = workResponse.map((workItem) => {
+        const containers = workResponse.map((workItem) => {
+            const containerRef = React.createRef();
             return (
-                <div className="tile is-parent" key={workItem.id.toString()}>
+                <div className="tile is-parent"
+                     key={workItem.id.toString()}
+                     ref={containerRef}>
                     <WorkContainer
                         workContainerSize="large"
                         workData={workItem}
+                        ref={containerRef}
                     />
                 </div>
             )
         });
+
+        setWorkContainers(containers);
     }
 
-    createWorkContainers();
     return (
-        <section className="section">
+        <section className="section" ref={containerRef}>
             <div className="container">
                 <WorkSectionStyled className="tile is-ancestor">
                     {workContainers}
