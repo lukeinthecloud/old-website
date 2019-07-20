@@ -6,14 +6,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5bd7e68e-2bb5-425b-bfc2-3ab885625c1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/LandingPage/Particle/ParticleContainerContext.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainerContainerContext.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainerSmall.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LandingPage/Particle/ParticleContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingPage/Particle/ParticleContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LandingPage/Particle/PartileContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainerContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainerLarge.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainerLarge.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainerLarge.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainerOverlay.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainerSmall.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LandingPage/Work/WorkSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingPage/Work/WorkSection.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -30,34 +28,37 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Work/WorkSection.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+            <state relative-caret-position="558">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#57#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainer.js">
+        <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Particle/ParticleContainer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+            <state relative-caret-position="396">
+              <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#51#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainerLarge.js">
+        <entry file="file://$PROJECT_DIR$/src/services/particle.service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="24" column="41" lean-forward="true" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+            <state relative-caret-position="592">
+              <caret line="36" column="54" lean-forward="true" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#32#0" expanded="true" />
+                <element signature="n#!!block;n#_createTexture#0" />
+                <element signature="n#!!block;n#_createEmitter#0" />
+                <element signature="n#!!block;n#_positionEmitter#0" />
               </folding>
             </state>
           </provider>
@@ -99,11 +100,11 @@
       <find>circleTexture</find>
       <find>requestID</find>
       <find>startParticles</find>
-      <find>debugger</find>
       <find>requestIdentifier</find>
       <find>render</find>
       <find>emitter.emit = true;</find>
       <find>update</find>
+      <find>debugger</find>
       <find>resizeEvent</find>
     </findStrings>
     <replaceStrings>
@@ -161,14 +162,14 @@
         <option value="$PROJECT_DIR$/src/components/LandingPage/Particle/PartileContext.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/Particle/particle-config.const.js" />
         <option value="$PROJECT_DIR$/src/services/particle.service.js" />
-        <option value="$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainerOverlay.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainerSmall.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainerContext.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/Work/WorkSectionContext.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainerContainerContext.js" />
-        <option value="$PROJECT_DIR$/src/components/LandingPage/Particle/ParticleContainer.js" />
-        <option value="$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainer.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainerLarge.js" />
+        <option value="$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainerOverlay.js" />
+        <option value="$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainer.js" />
+        <option value="$PROJECT_DIR$/src/components/LandingPage/Particle/ParticleContainer.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/Work/WorkSection.js" />
       </list>
     </option>
@@ -181,7 +182,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1448" />
+    <option name="width" value="1557" />
     <option name="height" value="1407" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -342,13 +343,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134120000" />
+    <option name="totallyTimeSpent" value="137414000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1448" height="1407" extended-state="0" />
+    <frame x="-7" y="0" width="1557" height="1407" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27194244" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25216812" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -369,25 +370,25 @@
       <window_info anchor="right" id="Run" order="3" side_tool="true" weight="0.67767406" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26477733" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25216812" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.3298639" />
       <window_info anchor="bottom" id="Message" order="3" />
-      <window_info anchor="bottom" id="Find" order="4" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.3298639" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.5276221" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.53082466" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Run" order="3" side_tool="true" weight="0.3395552" />
+      <window_info anchor="right" id="Run" order="3" side_tool="true" weight="0.67767406" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -642,40 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/particle.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="6" column="63" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-            <element signature="n#!!block;n#_createTexture#0" />
-            <element signature="n#!!block;n#_createEmitter#0" />
-            <element signature="e#1239#1305#0" />
-            <element signature="n#!!block;n#_positionEmitter#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainerOverlay.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainerSmall.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainerContext.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
@@ -700,10 +667,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainerSmall.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainerLarge.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainerOverlay.js" />
     <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Particle/ParticleContainer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="396">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
@@ -712,30 +682,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        <state relative-caret-position="502">
+          <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainerLarge.js">
+    <entry file="file://$PROJECT_DIR$/src/services/particle.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="24" column="41" lean-forward="true" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+        <state relative-caret-position="592">
+          <caret line="36" column="54" lean-forward="true" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
+            <element signature="n#!!block;n#_createTexture#0" />
+            <element signature="n#!!block;n#_createEmitter#0" />
+            <element signature="n#!!block;n#_positionEmitter#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Work/WorkSection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        <state relative-caret-position="558">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
