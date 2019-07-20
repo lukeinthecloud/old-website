@@ -9,36 +9,13 @@ import {
 } from './Work.style';
 
 import WorkContainerOverlay from './WorkContainerOverlay';
+import WorkContainerLarge from './WorkContainerLarge';
 
 export default function WorkContainer(props) {
-    function LargeWorkContainer() {
-        return (
-            <WorkContainerStyled className="tile is-child notification"
-                                 containerSize={`${props.workContainerSize}`}>
-                <WorkHeadingStyled className="title">{props.title}</WorkHeadingStyled>
-                <WorkDescriptionStyled>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, s
-                        ed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-                    </p>
-                </WorkDescriptionStyled>
-                <WorkSkillsContainerListStyled>
-                    <span><b>React</b></span>
-                    <span><b>/ Node</b></span>
-                    <span><b>/ Netlify</b></span>
-                </WorkSkillsContainerListStyled>
-                <WorkContainerOverlay
-                    id={props.id}
-                    dimensions={props.dimensions}/>
-            </WorkContainerStyled>
-        )
-    }
-
     function SmallWorkContainer() {
         return (
             <WorkContainerStyled className="tile is-child notification"
-                                 containerSize={`${props.workContainerSize}`}>
+                                 containerSize="small">
                 <WorkHeadingStyled className="title">
                     {props.title}
                     <WorkSkillsContainerListStyled>
@@ -53,8 +30,7 @@ export default function WorkContainer(props) {
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco.
                 </WorkDescriptionStyled>
                 <WorkContainerOverlay
-                    id={props.id}
-                    dimensions={props.dimensions}/>
+                    id={props.id}/>
             </WorkContainerStyled>
         )
     }
@@ -63,7 +39,7 @@ export default function WorkContainer(props) {
         <>
             {
                 props.workContainerSize === 'large' ?
-                    <LargeWorkContainer/> :
+                    <WorkContainerLarge title={props.title} id={props.id}/> :
                     <SmallWorkContainer/>
             }
         </>

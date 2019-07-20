@@ -1,27 +1,25 @@
 import React, {useEffect, useContext} from 'react';
 import {ParticleContainerStyled} from './Particle.style';
-import {ParticleEngineContext} from './PartileContext';
+import {WorkSectionContext} from './PartileContext';
 import * as particleService from '../../../services/particle.service';
 
 export default function ParticleContainer(props) {
-    const {particleEngine, dimensions} = useContext(ParticleEngineContext);
+    const {particleEngine, dimensions} = useContext(WorkSectionContext);
 
     useEffect(() => {
-        let elapsed = Date.now();
+        const elapsed = Date.now();
         const containerIdentifier = `particle-container-${props.identifier}`;
         let canvasContainer = document.getElementById(containerIdentifier);
+
         canvasContainer.appendChild(particleEngine.renderer.view);
         const destroyParticleEngine = particleService.initiateParticleEngine(particleEngine, elapsed);
 
         return () => {
             destroyParticleEngine();
-            canvasContainer.parentNode.removeChild(canvasContainer);
             canvasContainer = null;
         }
     }, [
         props.identifier,
-        props.dimensions.width,
-        props.dimensions.height,
         particleEngine,
         dimensions
     ]);

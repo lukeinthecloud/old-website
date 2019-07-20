@@ -1,3 +1,3 @@
 import * as React from 'react';
 
-export const ParticleEngineContext = React.createContext({});
+export const WorkSectionContext = React.createContext({});
