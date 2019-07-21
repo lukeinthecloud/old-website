@@ -1,8 +1,6 @@
 import React, {useEffect, useState} from 'react';
 
 import {WorkSectionStyled} from './Work.style';
-import WorkRowContainerSingle from './WorkRowContainerSingle';
-import WorkRowContainer from './WorkRowContainer';
 import {createRows} from '../../../services/work/work-row.service';
 
 const workResponse = [
@@ -29,30 +27,6 @@ const workResponse = [
         title: 'Project 4',
         description: 'Hello World',
         links: []
-    },
-    {
-        id: 5,
-        title: 'Project 1',
-        description: 'Hello World',
-        links: []
-    },
-    {
-        id: 6,
-        title: 'Project 2',
-        description: 'Hello World',
-        links: []
-    },
-    {
-        id: 7,
-        title: 'Project 3',
-        description: 'Hello World',
-        links: []
-    },
-    {
-        id: 8,
-        title: 'Project 4',
-        description: 'Hello World',
-        links: []
     }
 ];
 
@@ -69,14 +43,11 @@ export default function WorkSection() {
         setWorkContainers(containers);
     }
 
-
-
-
     return (
         <section className="section">
             <div className="container">
                 <WorkSectionStyled className="tile is-ancestor">
-                    <div className="tile is-vertical is-8">
+                    <div className="tile is-vertical">
                         {workContainers}
                     </div>
                 </WorkSectionStyled>

@@ -15,11 +15,11 @@ function _splitDataIntoRows(data) {
     let items = [];
     let counter = 0;
 
-    workItems.forEach((workItem) => {
+    workItems.forEach((workItem, index) => {
         items.push(workItem);
         counter++;
 
-        if (counter === 4) {
+        if (counter === 4 || index + 1 === workItems.length) {
             rows.push(items);
             items = [];
             counter = 0;
@@ -38,11 +38,13 @@ function _populateRowsWithData(containerRowsItems) {
 
 function _createRowContainers(containerRow, index) {
     const [firstWorkItem, secondWorkItem, thirdWorkItem, fourthWorkItem] = containerRow;
-
-    const multipleRow = <WorkRowContainer key={index.toString()}
-                                          workItems={[firstWorkItem, secondWorkItem, thirdWorkItem]}/>;
+    let singleRow = null;
+    let multipleRow = <WorkRowContainer key={index.toString()}
+                                    workItems={[firstWorkItem, secondWorkItem, thirdWorkItem]}/>;
     index++;
-    const singleRow = <WorkRowContainerSingle key={index.toString()} workItem={fourthWorkItem}/>;
+    if (fourthWorkItem) {
+        singleRow = <WorkRowContainerSingle key={index.toString()} workItem={fourthWorkItem}/>;
+    }
 
     return [multipleRow, singleRow]
 }
