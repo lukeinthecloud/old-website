@@ -1,53 +1,51 @@
 export const particleConfig = {
-    "alpha": {
-        "start": 0,
-        "end": 1
+    'particles': {
+        'number': {
+            'value': 20,
+            'density': {
+                'enable': false
+            }
+        },
+        'size': {
+            'value': 4,
+            'random': true,
+            'anim': {
+                'speed': 4,
+                'size_min': 1
+            }
+        },
+        'line_linked': {
+            'enable': false
+        },
+        'move': {
+            'random': true,
+            'speed': 1,
+            'direction': 'top',
+            'out_mode': 'out'
+        }
     },
-    "scale": {
-        "start": 0.2,
-        "end": 0.3,
-        "minimumScaleMultiplier": 1
-    },
-    "color": {
-        "start": "#FFFFFF",
-        "end": "#FFFFFF"
-    },
-    "speed": {
-        "start": 200,
-        "end": 50,
-        "minimumSpeedMultiplier": 1
-    },
-    "acceleration": {
-        "x": 10,
-        "y": 0
-    },
-    "maxSpeed": 0,
-    "startRotation": {
-        "min": 0,
-        "max": 360
-    },
-    "noRotation": false,
-    "rotationSpeed": {
-        "min": 0,
-        "max": 0
-    },
-    "lifetime": {
-        "min": 0,
-        "max": 20
-    },
-    "blendMode": "normal",
-    "frequency": 0.3,
-    "emitterLifetime": -1,
-    "maxParticles": 50,
-    "pos": {
-        "x": 0,
-        "y": 0
-    },
-    "addAtBack": false,
-    "spawnType": "circle",
-    "spawnCircle": {
-        "x": 0,
-        "y": 0,
-        "r": 0
+    'interactivity': {
+        'events': {
+            'onhover': {
+                'enable': true,
+                'mode': 'bubble'
+            },
+            'onclick': {
+                'enable': true,
+                'mode': 'repulse'
+            }
+        },
+        'modes': {
+            'bubble': {
+                'distance': 250,
+                'duration': 2,
+                'size': 0,
+                'opacity': 0
+            },
+            'repulse': {
+                'distance': 400,
+                'duration': 4
+            }
+        }
     }
 };

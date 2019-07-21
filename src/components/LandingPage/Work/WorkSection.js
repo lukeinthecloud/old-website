@@ -1,8 +1,7 @@
-import React, {useEffect, useState, useRef} from 'react';
+import React, {useEffect, useState} from 'react';
 
 import WorkContainer from './WorkContainer';
 import {WorkSectionStyled} from './Work.style';
-import * as _ from 'lodash';
 
 const workResponse = [
     {
@@ -33,44 +32,21 @@ const workResponse = [
 
 
 export default function WorkSection() {
-    const containerRef = useRef(null);
     const [workContainers, setWorkContainers] = useState([]);
-    const [dimensions, setDimensions] = useState({width: 0, height: 0});
-
 
     useEffect(() => {
-        _updateDimensions();
         createWorkContainers();
-    }, []);
+    }, [workContainers]);
 
-    useEffect(() => {
-        const resizeEvent = window.addEventListener('resize', _.debounce(_updateDimensions, 1000));
-
-        return () => {
-            window.removeEventListener('resize', resizeEvent, false);
-        }
-    }, []);
-
-    function _updateDimensions() {
-        createWorkContainers();
-        if (containerRef.current) {
-            const {width, height} = containerRef.current.getBoundingClientRect();
-            setDimensions({width, height});
-        }
-    }
 
     function createWorkContainers() {
         const containers = workResponse.map((workItem) => {
-            const containerRef = React.createRef();
             return (
                 <div className="tile is-parent"
-                     key={workItem.id.toString()}
-                     ref={containerRef}>
+                     key={workItem.id.toString()}>
                     <WorkContainer
                         workContainerSize="large"
-                        workData={workItem}
-                        ref={containerRef}
-                    />
+                        workData={workItem}/>
                 </div>
             )
         });
@@ -79,7 +55,7 @@ export default function WorkSection() {
     }
 
     return (
-        <section className="section" ref={containerRef}>
+        <section className="section">
             <div className="container">
                 <WorkSectionStyled className="tile is-ancestor">
                     {workContainers}
