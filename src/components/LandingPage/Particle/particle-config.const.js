@@ -1,7 +1,7 @@
 export const particleConfig = {
     'particles': {
         'number': {
-            'value': 20,
+            'value': 30,
             'density': {
                 'enable': false
             }
