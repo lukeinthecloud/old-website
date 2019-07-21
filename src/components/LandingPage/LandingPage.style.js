@@ -1,5 +1,11 @@
 import styled from '@emotion/styled/macro';
 
+export const LandingPageHeaderStyled = styled.header`
+    flex: initial;
+    height: 390px;
+    overflow: hidden;
+`;
+
 export const HeaderDividerStyled = styled.div`
   position: absolute;
   width: calc(100% * 2);

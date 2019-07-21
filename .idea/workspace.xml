@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/components/LandingPage/HeaderProfile/HeaderProfile.style.js" line="48" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5bd7e68e-2bb5-425b-bfc2-3ab885625c1f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/LandingPage/Work/WorkRowContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingPage/Work/WorkRowContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LandingPage/Work/work-response.const.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LandingPage/HeaderProfile/HeaderProfile.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingPage/HeaderProfile/HeaderProfile.style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LandingPage/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingPage/LandingPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LandingPage/LandingPage.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingPage/LandingPage.style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LandingPage/Particle/particle-config.const.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingPage/Particle/particle-config.const.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LandingPage/Skills/Skills.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingPage/Skills/Skills.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LandingPage/Work/Work.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingPage/Work/Work.style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LandingPage/Work/WorkSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingPage/Work/WorkSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/work/work-row.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/work/work-row.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LandingPage/landing-page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/global.style.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,35 +31,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Work/WorkSection.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#49#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/services/work/work-row.service.js">
+        <entry file="file://$PROJECT_DIR$/src/components/LandingPage/LandingPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="852">
-              <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Work/WorkRowContainer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="924">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="588">
+              <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/LandingPage/LandingPage.style.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Particle/particle-config.const.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles/global.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/LandingPage/HeaderProfile/HeaderProfile.style.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="840">
+              <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -62,12 +91,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>this.</find>
-      <find>props</find>
-      <find>useEffect</find>
-      <find>WorkContainerOverlay</find>
-      <find>ParticleContainerStyled</find>
-      <find>LandingPage/&gt;</find>
       <find>particleConfig</find>
       <find>@fortawesome/react-fontawesome</find>
       <find>_onWindowResize</find>
@@ -92,6 +115,12 @@
       <find>WorkRowContainerSingle</find>
       <find>console.log</find>
       <find>index</find>
+      <find>--lic-color-secondary</find>
+      <find>global</find>
+      <find>FooterStyled</find>
+      <find>FooterSocialLinkStyled</find>
+      <find>landingPageHeader</find>
+      <find>LandingPageHeader</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -106,14 +135,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/landing-page/Content/Introduction/Introduction.js" />
-        <option value="$PROJECT_DIR$/src/components/landing-page/HeaderProfile/HeaderProfile.js" />
-        <option value="$PROJECT_DIR$/src/components/landing-page/Content/Skills/Skills.js" />
-        <option value="$PROJECT_DIR$/src/components/landing-page/Content/Skills/Skills.style.js" />
-        <option value="$PROJECT_DIR$/src/components/landing-page/LandingPageContent.js" />
         <option value="$PROJECT_DIR$/src/components/landing-page/Content/Footer/fOOTER.STYLE.js" />
         <option value="$PROJECT_DIR$/src/components/landing-page/LandingPage.js" />
-        <option value="$PROJECT_DIR$/src/styles/global.css" />
         <option value="$PROJECT_DIR$/src/components/landing-page/Content/Footer/Footer.js" />
         <option value="$PROJECT_DIR$/src/components/landing-page/Content/Footer/Footer.style.js" />
         <option value="$PROJECT_DIR$/src/components/landing-page/Content/Work/Work.style.js" />
@@ -129,13 +152,9 @@
         <option value="$PROJECT_DIR$/src/components/landing-page/Content/Particle/particle.style.js" />
         <option value="$PROJECT_DIR$/src/components/landing-page/Content/Particle/particle-config.const.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/Content/Content.style.js" />
-        <option value="$PROJECT_DIR$/src/components/LandingPage/LandingPage.style.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/LandingPageContent.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/LandingPageHeader.js" />
-        <option value="$PROJECT_DIR$/src/components/LandingPage/Skills/Skills.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/HeaderProfile/HeaderProfile.js" />
-        <option value="$PROJECT_DIR$/src/components/Footer/Footer.js" />
-        <option value="$PROJECT_DIR$/src/components/LandingPage/LandingPage.js" />
         <option value="$PROJECT_DIR$/src/util/pixi.util.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/Particle/ParticleContext.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/Particle/ParticleEngineContext.js" />
@@ -150,13 +169,23 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/Particle/Particle.style.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/Particle/ParticleContainer.js" />
-        <option value="$PROJECT_DIR$/src/components/LandingPage/Particle/particle-config.const.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/Work/WorkContainer.js" />
         <option value="$PROJECT_DIR$/src/services/work/work-item.service.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/Work/WorkRowContainerSingle.js" />
         <option value="$PROJECT_DIR$/src/services/work/work-row.service.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/Work/WorkRowContainer.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/Work/WorkSection.js" />
+        <option value="$PROJECT_DIR$/src/components/LandingPage/Work/work-response.const.js" />
+        <option value="$PROJECT_DIR$/src/components/LandingPage/Skills/Skills.js" />
+        <option value="$PROJECT_DIR$/src/components/LandingPage/Work/Work.style.js" />
+        <option value="$PROJECT_DIR$/src/components/Footer/Footer.js" />
+        <option value="$PROJECT_DIR$/src/components/Footer/Footer.style.js" />
+        <option value="$PROJECT_DIR$/src/components/LandingPage/landing-page.module.css" />
+        <option value="$PROJECT_DIR$/src/components/LandingPage/LandingPage.js" />
+        <option value="$PROJECT_DIR$/src/styles/global.css" />
+        <option value="$PROJECT_DIR$/src/components/LandingPage/HeaderProfile/HeaderProfile.style.js" />
+        <option value="$PROJECT_DIR$/src/components/LandingPage/LandingPage.style.js" />
+        <option value="$PROJECT_DIR$/src/components/LandingPage/Particle/particle-config.const.js" />
       </list>
     </option>
   </component>
@@ -168,7 +197,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1800" />
+    <option name="width" value="1847" />
     <option name="height" value="1407" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -187,11 +216,6 @@
             <path>
               <item name="lukeinthecloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="lukeinthecloud" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lukeinthecloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lukeinthecloud" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -213,20 +237,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="LandingPage" type="462c0819:PsiDirectoryNode" />
-              <item name="Work" type="462c0819:PsiDirectoryNode" />
+              <item name="Particle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lukeinthecloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="lukeinthecloud" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lukeinthecloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lukeinthecloud" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -339,13 +356,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146175000" />
+    <option name="totallyTimeSpent" value="154922000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1800" height="1407" extended-state="0" />
+    <frame x="-7" y="0" width="1847" height="1407" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2152698" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2096143" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -391,21 +408,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/landing-page.module.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@emotion/styled/macro.d.ts" />
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/structural.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="82" column="16" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/theme.js" />
     <entry file="file://$PROJECT_DIR$/src/App.test.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -428,20 +430,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-864">
           <caret line="48" column="18" lean-forward="true" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/global.style.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -477,58 +465,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/LandingPage.style.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Skills/Skills.style.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Introduction/Introduction.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/HeaderProfile/HeaderProfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="10" column="69" lean-forward="true" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/HeaderProfile/HeaderProfile.style.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1036">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Footer/Footer.style.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="868">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Footer/Footer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="20" column="57" lean-forward="true" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -605,16 +545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/LandingPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -632,13 +562,6 @@
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Skills/Skills.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2004">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
@@ -666,13 +589,6 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Particle/particle-config.const.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -710,10 +626,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Work/Work.style.js">
+    <entry file="file://$PROJECT_DIR$/src/services/work/work-row.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="852">
+          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -727,20 +643,162 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/work/work-row.service.js">
+    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Work/work-response.const.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="852">
-          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+        <state relative-caret-position="728">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Work/WorkSection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        <state relative-caret-position="420">
+          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="248" column="16" selection-start-line="248" selection-start-column="16" selection-end-line="248" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Skills/Skills.style.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Skills/Skills.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="896">
+          <caret line="118" column="38" lean-forward="true" selection-start-line="118" selection-start-column="38" selection-end-line="118" selection-end-column="38" />
+          <folding>
+            <element signature="e#780#1144#0" />
+            <element signature="e#924#1102#0" />
+            <element signature="e#1182#1321#0" />
+            <element signature="e#1248#2043#0" />
+            <element signature="e#1317#1996#0" />
+            <element signature="e#1370#1537#0" />
+            <element signature="e#1586#1742#0" />
+            <element signature="e#1791#1946#0" />
+            <element signature="e#1447#1629#0" />
+            <element signature="e#2716#3421#0" />
+            <element signature="e#2782#3378#0" />
+            <element signature="e#2851#3331#0" />
+            <element signature="e#2904#3071#0" />
+            <element signature="e#3120#3281#0" />
+            <element signature="e#1829#2198#0" />
+            <element signature="e#1973#2156#0" />
+            <element signature="e#4015#5539#0" />
+            <element signature="e#4081#5496#0" />
+            <element signature="e#4150#5449#0" />
+            <element signature="e#4203#4363#0" />
+            <element signature="e#4412#4573#0" />
+            <element signature="e#4622#4776#0" />
+            <element signature="e#4825#4984#0" />
+            <element signature="e#5033#5193#0" />
+            <element signature="e#5242#5399#0" />
+            <element signature="e#2356#2723#0" />
+            <element signature="e#2499#2681#0" />
+            <element signature="e#6131#6823#0" />
+            <element signature="e#6197#6780#0" />
+            <element signature="e#6266#6733#0" />
+            <element signature="e#6319#6476#0" />
+            <element signature="e#6525#6683#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Work/Work.style.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/global.style.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="36" selection-start-column="36" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Footer/Footer.style.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Footer/Footer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/landing-page.module.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/HeaderProfile/HeaderProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/LandingPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/global.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/HeaderProfile/HeaderProfile.style.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/LandingPage.style.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Particle/particle-config.const.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>

@@ -16,6 +16,8 @@ export const WorkContainerStyled = styled.div`
   justify-content: space-between;
   font-size: ${props => props.containerSize === 'large' ? workContainerLarge : workContainerSmall};
   border-radius: 0;
+  min-height: 20rem;
+  
   && {
     background-color: transparent;
   }
@@ -79,6 +81,5 @@ export const WorkImageBackgroundStyled = styled.div`
   background-image: url(${props => props.backgroundImage});
   background-size: cover;
   background-repeat: no-repeat;
-  //filter: blur(8px);
   z-index: 0;
 `;

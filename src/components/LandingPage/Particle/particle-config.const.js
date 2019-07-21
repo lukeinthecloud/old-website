@@ -1,13 +1,26 @@
 export const particleConfig = {
     'particles': {
         'number': {
-            'value': 30,
+            'value': 20,
             'density': {
                 'enable': false
             }
         },
+        "color": {
+            "value": "#E3E3E3"
+        },
+        "opacity": {
+            "value": 0.1,
+            "random": false,
+            "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+            }
+        },
         'size': {
-            'value': 4,
+            'value': 3,
             'random': true,
             'anim': {
                 'speed': 4,
@@ -38,7 +51,7 @@ export const particleConfig = {
         'modes': {
             'bubble': {
                 'distance': 250,
-                'duration': 2,
+                'duration': 20,
                 'size': 0,
                 'opacity': 0
             },

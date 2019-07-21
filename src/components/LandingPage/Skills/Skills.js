@@ -17,43 +17,15 @@ export default function Skills() {
                 <SkillWrapperStyled className="level-item has-text-centered">
                     <SkillContainerStyled className="columns u-flex-column u-with-100">
                         <div className="column">
-                            <div className="columns">
-                                <div className="column is-flex u-justify-center">
+                            <div className="columns is-multiline is-flex u-align-start">
+                                <div className="column is-one-quarter-desktop is-half-tablet is-full-mobile is-flex u-flex-column u-justify-center u-align-center">
                                     <h4 className="subtitle is-4 is-flex u-align-center">
                                         Languages
                                         <IconStyled className="is-flex u-justify-center">
                                             <FontAwesomeIcon icon="code"/>
                                         </IconStyled>
                                     </h4>
-                                </div>
-                                <div className="column is-flex u-justify-center">
-                                    <h4 className="subtitle is-4 is-flex u-align-center">
-                                        Frameworks
-                                        <IconStyled className="is-flex u-justify-center">
-                                            <FontAwesomeIcon icon="crop-alt"/>
-                                        </IconStyled>
-                                    </h4>
-                                </div>
-                                <div className="column is-flex u-justify-center">
-                                    <h4 className="subtitle is-4 is-flex u-align-center">
-                                        Libraries
-                                        <IconStyled className="is-flex u-justify-center">
-                                            <FontAwesomeIcon icon="book-open"/>
-                                        </IconStyled>
-                                    </h4>
-                                </div>
-                                <div className="column is-flex u-justify-center">
-                                    <h4 className="subtitle is-4 is-flex u-align-center">
-                                        Database
-                                        <IconStyled className="is-flex u-justify-center">
-                                            <FontAwesomeIcon icon="database"/>
-                                        </IconStyled>
-                                    </h4>
-                                </div>
-                            </div>
 
-                            <div className="columns">
-                                <div className="column">
                                     <div className="columns">
                                         <div className="column">
                                             <ul>
@@ -70,8 +42,14 @@ export default function Skills() {
                                         </div>
                                     </div>
                                 </div>
+                                <div className="column is-one-quarter-desktop is-half-tablet is-full-mobile is-flex u-flex-column u-justify-center u-align-center">
+                                    <h4 className="subtitle is-4 is-flex u-align-center">
+                                        Frameworks
+                                        <IconStyled className="is-flex u-justify-center">
+                                            <FontAwesomeIcon icon="crop-alt"/>
+                                        </IconStyled>
+                                    </h4>
 
-                                <div className="column">
                                     <div className="columns">
                                         <div className="column">
                                             <ul>
@@ -85,8 +63,14 @@ export default function Skills() {
                                         </div>
                                     </div>
                                 </div>
+                                <div className="column is-one-quarter-desktop is-half-tablet is-full-mobile is-flex u-flex-column u-justify-center u-align-center">
+                                    <h4 className="subtitle is-4 is-flex u-align-center">
+                                        Libraries
+                                        <IconStyled className="is-flex u-justify-center">
+                                            <FontAwesomeIcon icon="book-open"/>
+                                        </IconStyled>
+                                    </h4>
 
-                                <div className="column">
                                     <div className="columns">
                                         <div className="column">
                                             <ul>
@@ -112,8 +96,14 @@ export default function Skills() {
                                         </div>
                                     </div>
                                 </div>
+                                <div className="column is-one-quarter-desktop is-half-tablet is-full-mobile is-flex u-flex-column u-justify-center u-align-center">
+                                    <h4 className="subtitle is-4 is-flex u-align-center">
+                                        Database
+                                        <IconStyled className="is-flex u-justify-center">
+                                            <FontAwesomeIcon icon="database"/>
+                                        </IconStyled>
+                                    </h4>
 
-                                <div className="column">
                                     <div className="columns">
                                         <div className="column">
                                             <ul>

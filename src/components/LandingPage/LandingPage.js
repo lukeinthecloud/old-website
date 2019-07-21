@@ -8,18 +8,18 @@ import '@fortawesome/free-solid-svg-icons';
 import LandingPageHeader from './LandingPageHeader';
 import LandingPageContent from './LandingPageContent';
 
-import styles from './landing-page.module.css';
 import {faCropAlt} from '@fortawesome/free-solid-svg-icons';
 import {fab} from '@fortawesome/free-brands-svg-icons';
+import {LandingPageHeaderStyled} from './LandingPage.style';
 
 library.add(fab, faCropAlt);
 
 export default function LandingPage() {
     return (
         <>
-            <header className={styles.landingPageHeader}>
+            <LandingPageHeaderStyled>
                 <LandingPageHeader/>
-            </header>
+            </LandingPageHeaderStyled>
             <LandingPageContent/>
         </>
     );
