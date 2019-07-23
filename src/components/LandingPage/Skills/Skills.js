@@ -9,17 +9,19 @@ import {
 
 import {SectionAltStyled} from '../LandingPage.style';
 import withAnimation from '../../HOC/withAnimation';
+import Animate from '../../Animate';
 
 const Skills = React.forwardRef((props, ref) => {
         return (
             <SectionAltStyled ref={ref} className="section">
-                {
-                    props.canRender &&
-                    <div className="container is-full animated fadeInUp">
-                        <SkillWrapperStyled className="level-item has-text-centered">
-                            <SkillContainerStyled className="columns u-flex-column u-with-100">
-                                <div className="column">
-                                    <div className="columns is-multiline is-flex u-align-start">
+                <div className={`container is-full`}>
+                    <SkillWrapperStyled className="level-item has-text-centered">
+                        <SkillContainerStyled className="columns u-flex-column u-with-100">
+                            <div className="column">
+                                <div className="columns is-multiline is-flex u-align-start">
+                                    <Animate canAnimate={props.canAnimate} options={{
+                                        animateClass: 'fadeInLeft'
+                                    }}>
                                         <div
                                             className="column is-one-quarter-desktop is-half-tablet is-full-mobile is-flex u-flex-column u-justify-center u-align-center">
                                             <h4 className="subtitle is-4 is-flex u-align-center">
@@ -45,6 +47,10 @@ const Skills = React.forwardRef((props, ref) => {
                                                 </div>
                                             </div>
                                         </div>
+                                    </Animate>
+                                    <Animate canAnimate={props.canAnimate} options={{
+                                        animateClass: 'fadeInLeft'
+                                    }}>
                                         <div
                                             className="column is-one-quarter-desktop is-half-tablet is-full-mobile is-flex u-flex-column u-justify-center u-align-center">
                                             <h4 className="subtitle is-4 is-flex u-align-center">
@@ -67,6 +73,10 @@ const Skills = React.forwardRef((props, ref) => {
                                                 </div>
                                             </div>
                                         </div>
+                                    </Animate>
+                                    <Animate canAnimate={props.canAnimate} options={{
+                                        animateClass: 'fadeInRight'
+                                    }}>
                                         <div
                                             className="column is-one-quarter-desktop is-half-tablet is-full-mobile is-flex u-flex-column u-justify-center u-align-center">
                                             <h4 className="subtitle is-4 is-flex u-align-center">
@@ -101,6 +111,10 @@ const Skills = React.forwardRef((props, ref) => {
                                                 </div>
                                             </div>
                                         </div>
+                                    </Animate>
+                                    <Animate canAnimate={props.canAnimate} options={{
+                                        animateClass: 'fadeInRight'
+                                    }}>
                                         <div
                                             className="column is-one-quarter-desktop is-half-tablet is-full-mobile is-flex u-flex-column u-justify-center u-align-center">
                                             <h4 className="subtitle is-4 is-flex u-align-center">
@@ -123,13 +137,12 @@ const Skills = React.forwardRef((props, ref) => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </Animate>
                                 </div>
-                            </SkillContainerStyled>
-                        </SkillWrapperStyled>
-                    </div>
-                }
-
+                            </div>
+                        </SkillContainerStyled>
+                    </SkillWrapperStyled>
+                </div>
             </SectionAltStyled>
         );
     }

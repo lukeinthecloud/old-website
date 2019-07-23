@@ -7,9 +7,7 @@ export default function Scroll(props) {
 
     function _addWindowScrollListener() {
         window.addEventListener('scroll', () => {
-            if (window.scrollY % 50 === 0) {
-                setScrollPoint(window.scrollY);
-            }
+            setScrollPoint(window.scrollY);
         });
     }
 

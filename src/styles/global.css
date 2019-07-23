@@ -46,6 +46,14 @@ section {
     flex-direction: column;
 }
 
+.u-d-none {
+    display: none;
+}
+
+.u-visibility-none {
+    visibility: hidden;
+}
+
 .u-title-primary {
     color: var(--lic-color-quartinary) !important;
 }

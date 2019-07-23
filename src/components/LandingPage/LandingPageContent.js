@@ -4,15 +4,17 @@ import Introduction from './Introduction/Introduction';
 import Skills from './Skills/Skills';
 import WorkSection from './Work/WorkSection';
 import Footer from '../Footer/Footer';
-import Scroll from './Scroll';
+import Scroll from '../Scroll';
 
 export default function LandingPageContent() {
     return (
-        <Scroll>
+        <>
             <Introduction/>
-            <Skills/>
-            {/*<WorkSection/>*/}
-            {/*<Footer/>*/}
-        </Scroll>
+            <Scroll>
+                <Skills/>
+                <WorkSection/>
+            </Scroll>
+            <Footer/>
+        </>
     );
 }

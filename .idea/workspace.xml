@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5bd7e68e-2bb5-425b-bfc2-3ab885625c1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/HOC/withAnimation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LandingPage/Scroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Animate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HOC/withAnimation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HOC/withAnimation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LandingPage/Introduction/Introduction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingPage/Introduction/Introduction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LandingPage/LandingPageContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingPage/LandingPageContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LandingPage/Scroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Scroll.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LandingPage/Skills/Skills.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingPage/Skills/Skills.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Scoll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LandingPage/Work/WorkSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingPage/Work/WorkSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,22 +26,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/HOC/withAnimation.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Work/WorkSection.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="13" column="57" lean-forward="true" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
+            <state relative-caret-position="600">
+              <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/LandingPage/LandingPageContent.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Animate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="672">
+              <caret line="24" selection-start-line="24" selection-end-line="30" selection-end-column="17" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#49#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -57,10 +62,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>useCal</find>
-      <find>_setElapsed</find>
-      <find>containerIdentifier</find>
-      <find>hit'</find>
       <find>loadash</find>
       <find>'hit</find>
       <find>circleTexture</find>
@@ -87,9 +88,15 @@
       <find>console.lo</find>
       <find>ref</find>
       <find>console.log</find>
+      <find>canRender</find>
+      <find>u-d-none</find>
+      <find>delay-</find>
+      <find>styled(</find>
     </findStrings>
     <replaceStrings>
       <replace />
+      <replace>canAnimate</replace>
+      <replace>u-vi</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\Users\luker\Workspace\Work\lukeinthecloud\src\components</dir>
@@ -101,8 +108,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/landing-page/Content/ParticleContainer.js" />
-        <option value="$PROJECT_DIR$/src/components/landing-page/Content/Work/WorkSection.js" />
         <option value="$PROJECT_DIR$/src/components/landing-page/Content/Work/WorkOverlay.js" />
         <option value="$PROJECT_DIR$/src/components/landing-page/Content/Work/WorkContainerOverlay.js" />
         <option value="$PROJECT_DIR$/src/components/landing-page/Content/Particle/ParticleContainer.js" />
@@ -130,12 +135,10 @@
         <option value="$PROJECT_DIR$/src/components/LandingPage/Work/WorkRowContainerSingle.js" />
         <option value="$PROJECT_DIR$/src/services/work/work-row.service.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/Work/WorkRowContainer.js" />
-        <option value="$PROJECT_DIR$/src/components/LandingPage/Work/WorkSection.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/Work/Work.style.js" />
         <option value="$PROJECT_DIR$/src/components/Footer/Footer.js" />
         <option value="$PROJECT_DIR$/src/components/Footer/Footer.style.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/landing-page.module.css" />
-        <option value="$PROJECT_DIR$/src/styles/global.css" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/HeaderProfile/HeaderProfile.style.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/LandingPage.style.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/Particle/particle-config.const.js" />
@@ -149,9 +152,13 @@
         <option value="$PROJECT_DIR$/src/components/LandingPage/LandingPage.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/Scroll.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/Introduction/Introduction.js" />
-        <option value="$PROJECT_DIR$/src/components/LandingPage/Skills/Skills.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage/LandingPageContent.js" />
+        <option value="$PROJECT_DIR$/src/styles/global.css" />
+        <option value="$PROJECT_DIR$/src/components/Scroll.js" />
+        <option value="$PROJECT_DIR$/src/components/LandingPage/Skills/Skills.js" />
         <option value="$PROJECT_DIR$/src/components/HOC/withAnimation.js" />
+        <option value="$PROJECT_DIR$/src/components/LandingPage/Work/WorkSection.js" />
+        <option value="$PROJECT_DIR$/src/components/Animate.js" />
       </list>
     </option>
   </component>
@@ -163,7 +170,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="3" />
-    <option name="width" value="1626" />
+    <option name="width" value="1702" />
     <option name="height" value="1407" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -172,6 +179,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,22 +203,7 @@
               <item name="lukeinthecloud" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="HOC" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lukeinthecloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lukeinthecloud" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="LandingPage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lukeinthecloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lukeinthecloud" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="LandingPage" type="462c0819:PsiDirectoryNode" />
-              <item name="Introduction" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lukeinthecloud" type="b2602c69:ProjectViewProjectNode" />
@@ -220,11 +213,18 @@
               <item name="LandingPage" type="462c0819:PsiDirectoryNode" />
               <item name="Skills" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="lukeinthecloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lukeinthecloud" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="LandingPage" type="462c0819:PsiDirectoryNode" />
+              <item name="Work" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -241,19 +241,19 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.1.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\luker\Workspace\lukeinthecloud\src\components" />
+      <recent name="D:\Users\luker\Workspace\lukeinthecloud\src\components\LandingPage" />
+      <recent name="D:\Users\luker\Workspace\lukeinthecloud\src\components\LandingPage\Particle" />
+      <recent name="D:\Users\luker\Workspace\lukeinthecloud\src\components\LandingPage\Work" />
+      <recent name="D:\Users\luker\Workspace\lukeinthecloud\src\components\landing-page\Content\Particle" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Users\luker\Workspace\lukeinthecloud\src\components\LandingPage\Work" />
       <recent name="D:\Users\luker\Workspace\Work\lukeinthecloud\src\components\landing-page\Content" />
       <recent name="D:\Users\luker\Workspace\Work\lukeinthecloud\src\components\styles" />
       <recent name="D:\Users\luker\Workspace\Work\lukeinthecloud\src\components\landing-page" />
       <recent name="D:\Users\luker\Workspace\Work\lukeinthecloud\src\components\landing-page\HeaderProfile" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Users\luker\Workspace\lukeinthecloud\src\components\LandingPage" />
-      <recent name="D:\Users\luker\Workspace\lukeinthecloud\src\components\LandingPage\Particle" />
-      <recent name="D:\Users\luker\Workspace\lukeinthecloud\src\components\LandingPage\Work" />
-      <recent name="D:\Users\luker\Workspace\lukeinthecloud\src\components" />
-      <recent name="D:\Users\luker\Workspace\lukeinthecloud\src\components\landing-page\Content\Particle" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -327,18 +327,19 @@
       <workItem from="1563383192918" duration="16666000" />
       <workItem from="1563476569980" duration="12813000" />
       <workItem from="1563576353818" duration="2586000" />
-      <workItem from="1563820183008" duration="10092000" />
+      <workItem from="1563820183008" duration="10191000" />
+      <workItem from="1563909067146" duration="7650000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171687000" />
+    <option name="totallyTimeSpent" value="179436000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="0" width="1626" height="1407" extended-state="0" />
+    <frame x="3" y="0" width="1702" height="1407" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24234694" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23418492" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -356,7 +357,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Run" order="3" side_tool="true" weight="0.38392186" />
+      <window_info anchor="right" id="Run" order="3" side_tool="true" weight="0.38681492" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25216812" />
@@ -384,13 +385,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/pixi.js/pixi.js.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="2262" column="34" lean-forward="true" selection-start-line="2262" selection-start-column="34" selection-end-line="2262" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Content/Content.style.js" />
     <entry file="file://$PROJECT_DIR$/src/components/LandingPage/LandingPageHeader.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -496,13 +490,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/work/work-row.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="852">
-          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Work/WorkRowContainer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="924">
@@ -520,13 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Skills/Skills.style.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Work/Work.style.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -539,21 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Footer/Footer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -589,35 +554,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
-          <folding>
-            <element signature="e#6#285#0" />
-            <element signature="e#292#316#0" />
-            <element signature="e#329#396#0" />
-            <element signature="e#421#513#0" />
-            <element signature="e#517#581#0" />
-            <element signature="e#590#630#0" />
-            <element signature="e#640#680#0" />
-            <element signature="e#696#727#0" />
-            <element signature="e#746#800#0" />
-            <element signature="e#821#872#0" />
-            <element signature="e#892#924#0" />
-            <element signature="e#943#979#0" />
-            <element signature="e#996#1030#0" />
-            <element signature="e#1048#1076#0" />
-            <element signature="e#1093#1120#0" />
-            <element signature="e#1137#1168#0" />
-            <element signature="e#1182#1202#0" />
-            <element signature="e#1222#1257#0" />
-            <element signature="e#1259#1329#0" />
-            <element signature="e#1295#1327#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/animate-extra.css">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -639,20 +575,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Scoll.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1064">
-          <caret line="38" column="6" lean-forward="true" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Scoll.js" />
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -680,57 +603,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Scroll.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        <state relative-caret-position="924">
+          <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Skills/Skills.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2522">
-          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Work/WorkSection.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Footer/Footer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Introduction/Introduction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/LandingPageContent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/HOC/withAnimation.js">
+    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Introduction/Introduction.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
-          <caret line="13" column="57" lean-forward="true" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
+          <caret line="13" column="80" lean-forward="true" selection-start-line="13" selection-start-column="80" selection-end-line="13" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/LandingPageContent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/global.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="52" column="10" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="18" />
+          <folding>
+            <element signature="e#6#285#0" />
+            <element signature="e#292#316#0" />
+            <element signature="e#329#396#0" />
+            <element signature="e#421#513#0" />
+            <element signature="e#517#581#0" />
+            <element signature="e#590#630#0" />
+            <element signature="e#640#680#0" />
+            <element signature="e#696#727#0" />
+            <element signature="e#746#800#0" />
+            <element signature="e#821#872#0" />
+            <element signature="e#892#924#0" />
+            <element signature="e#943#979#0" />
+            <element signature="e#996#1030#0" />
+            <element signature="e#1048#1076#0" />
+            <element signature="e#1093#1120#0" />
+            <element signature="e#1182#1202#0" />
+            <element signature="e#1222#1257#0" />
+            <element signature="e#1259#1329#0" />
+            <element signature="e#1295#1327#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/work/work-row.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-240">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Skills/Skills.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="38" column="37" lean-forward="true" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Scroll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/HOC/withAnimation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Work/WorkSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/LandingPage/Skills/Skills.style.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="12" selection-start-line="12" selection-end-line="14" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Animate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="24" selection-start-line="24" selection-end-line="30" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
